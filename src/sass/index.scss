@@ -1,15 +1,13 @@
-@import './common';
-// @import './example';
-
+@import './utils/utils';
+@import './base/common';
+@import './base/reset';
+@import './components/components';
 @import './header';
-
-// @import './hero';
+@import './hero';
 @import './products';
 @import './about';
 @import './advantages';
-
-// @import './gallery';
-// @import './reviews';
-// @import './contacts';
-
+@import './gallery';
+@import './reviews';
+@import './contacts';
 @import './footer';

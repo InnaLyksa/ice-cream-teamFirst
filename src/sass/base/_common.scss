@@ -1,0 +1,17 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: $font-main;
+  color: $color-primary;
+  letter-spacing: $spacing-medium;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.76;
+  letter-spacing: $spacing-medium;
+
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
+}
