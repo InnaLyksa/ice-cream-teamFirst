@@ -1,0 +1,47 @@
+.menu-modal {
+  background-color: $bgr-color-main;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__open {
+    display: block;
+    margin-left: auto;
+    padding: 16px 16px 16px;
+  }
+  &__close {
+    position: relative;
+    fill: #ffffff;
+    margin-left: auto;
+    padding: 16px 16px 16px;
+  }
+  &_item {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21;
+
+    align-items: center;
+    text-align: center;
+
+    color: #fcfcfc;
+  }
+  &_link {
+    gap: 32px;
+  }
+  &_list {
+    display: flex;
+  }
+  &_item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.buy-now {
+  margin-bottom: 63px;
+  margin-top: auto;
+  width: 152px;
+  height: 42px;
+  background-color: $color-accent;
+  border-radius: 10px;
+}
