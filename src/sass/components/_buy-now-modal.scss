@@ -1,0 +1,23 @@
+.modal_buy {
+  background-color: $text-color;
+  border: 2px solid $color-accent;
+  border-radius: 10px;
+}
+.buy-now__container {
+  display: flex;
+  flex-direction: column;
+}
+.icon-modal-close {
+  margin-left: auto;
+  margin-top: 8px;
+}
+
+.modal__title {
+  font-family: $font-second;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 28px;
+  //   text-align: center;
+
+  color: $color-primary;
+}
