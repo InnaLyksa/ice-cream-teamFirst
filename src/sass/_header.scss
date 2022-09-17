@@ -1,0 +1,17 @@
+.header {
+  background-color: $bgr-color-main;
+}
+.header_container {
+  display: flex;
+}
+.favicon {
+  display: block;
+}
+
+.icon-favicon {
+  fill: $color-accent;
+}
+
+.icon-menu {
+  fill: #ffffff;
+}
