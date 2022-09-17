@@ -13,8 +13,14 @@
     <symbol id="icon-menu_open" viewBox="0 0 32 32">
       <path fill="none" stroke="#fff" style="stroke:var(--color4, #fff)" stroke-linecap="round" stroke-width="2" d="M6 10h20M6 16h20M6 22h20"/>
     </symbol>
+    <symbol id="icon-Vector-1" viewBox="0 0 22 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l15.84 12.8-15.84 12.8"></path>
+</symbol>
 <symbol id="icon-bracket" viewBox="0 0 32 32">
 <path  d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
+</symbol>
+<symbol id="icon-vektra" viewBox="0 0 22 32">
+<path d="M2.862 0.019c-0.872 0.095-1.628 0.528-2.145 1.163l-0.005 0.006c-0.443 0.545-0.712 1.247-0.712 2.012 0 1.002 0.46 1.896 1.181 2.483l0.006 0.005 12.762 10.313-12.762 10.313c-0.727 0.591-1.187 1.486-1.187 2.488 0 0.765 0.269 1.468 0.717 2.018l-0.005-0.006c0.591 0.727 1.486 1.187 2.488 1.187 0.765 0 1.468-0.269 2.018-0.717l-0.006 0.005 15.831-12.8c0.726-0.591 1.187-1.486 1.187-2.488s-0.46-1.896-1.181-2.483l-0.006-0.005-15.831-12.8c-0.545-0.443-1.247-0.712-2.012-0.712-0.119 0-0.237 0.006-0.352 0.019l0.014-0.001z"></path>
 </symbol>
 
 
