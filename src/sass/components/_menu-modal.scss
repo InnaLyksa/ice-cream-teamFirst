@@ -1,14 +1,21 @@
 .menu-modal {
   background-color: $bgr-color-main;
-  &__container {
+  > .container {
+    height: 100%;
     display: flex;
     flex-direction: column;
+  }
+  &__nav {
+    display: flex;
     align-items: center;
   }
   &__open {
-    display: block;
+    // display: block;
     margin-left: auto;
     padding: 16px 16px 16px;
+    @include tablet {
+      display: block;
+    }
   }
   &__close {
     position: relative;
@@ -16,32 +23,38 @@
     margin-left: auto;
     padding: 16px 16px 16px;
   }
-  &_item {
+}
+.menu-nav {
+  margin-bottom: auto;
+  margin-top: 50px;
+  &__list {
+    margin-top: auto;
+  }
+  &__item {
     font-weight: 700;
     font-size: 32px;
     line-height: 1.21;
 
-    align-items: center;
-    text-align: center;
-
     color: #fcfcfc;
   }
-  &_link {
+  &__link {
     gap: 32px;
   }
-  &_list {
-    display: flex;
-  }
-  &_item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
-
-.buy-now {
-  margin-bottom: 63px;
-  margin-top: auto;
+.button__nav {
+  display: flex;
+  justify-content: center;
+  // background-color: tomato;
+}
+.buy-now__button {
+  background-color: $color-accent;
   width: 152px;
   height: 42px;
-  background-color: $color-accent;
-  border-radius: 10px;
+  margin-bottom: 62px;
+  @include tablet {
+    display: none;
+  }
 }
