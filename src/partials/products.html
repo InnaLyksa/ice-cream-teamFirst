@@ -5,14 +5,17 @@
     <ul class="products__list">
       <li class="products__item products__item--green">
         <div class="products__wrap">
-          <div class="products__overlay"></div>
           <h3 class="products__sub-title">ice cream</h3>
           <p class="products__text">
             Soft ice cream with a delicate taste. Made with milk, cream, sugar
             and natural stabilizer
           </p>
         </div>
-        <button type="button" class="button products__btn">
+        <button
+          type="button"
+          class="button products__btn--open js-open-modal"
+          data-modal="4"
+        >
           <svg class="products__icon" width="40" height="20">
             <use href="/src/images/icon.svg#icon-arrow-d"></use>
           </svg>
@@ -26,7 +29,11 @@
             without the use of preservatives and flavor enhancers
           </p>
         </div>
-        <button type="button" class="button products__btn">
+        <button
+          type="button"
+          class="button products__btn--open js-open-modal"
+          data-modal="4"
+        >
           <svg class="products__icon" width="40" height="20">
             <use href="/src/images/icon.svg#icon-arrow-d"></use>
           </svg>
@@ -40,7 +47,11 @@
             fruits, berries and other sweets of your choice
           </p>
         </div>
-        <button type="button" class="button products__btn">
+        <button
+          type="button"
+          class="button products__btn--open js-open-modal"
+          data-modal="4"
+        >
           <svg class="products__icon" width="40" height="20">
             <use href="/src/images/icon.svg#icon-arrow-d"></use>
           </svg>
@@ -49,3 +60,108 @@
     </ul>
   </div>
 </section>
+<!-- Menu-Modal-4 -->
+
+<div class="products__overlay js-overlay-modal modal" data-modal="4">
+  <div class="products-modal__wrap">
+    <button type="button" class="button products__btn--close js-modal-close">
+      <svg width="20" height="20" class="icon-menu_close">
+        <use href="/src/images/icon.svg#icon-menu_close"></use>
+      </svg>
+    </button>
+    <p class="products-modal__title title-section">Chololate icecream</p>
+    <div class="product__wrap">
+      <div class="product__img"></div>
+    </div>
+    <ul class="features__list">
+      <li class="features__item">
+        <p class="features__value">320</p>
+        <p class="features__text--property">kcal</p>
+      </li>
+      <li class="features__item">
+        <p class="features__value">4g</p>
+        <p class="features__text--property">Prote...</p>
+      </li>
+      <li class="features__item">
+        <p class="features__value">8,2g</p>
+        <p class="features__text--property">Fats</p>
+      </li>
+      <li class="features__item">
+        <p class="features__value">40,4g</p>
+        <p class="features__text--property">Carbs</p>
+      </li>
+    </ul>
+    <div class="description__wrap">
+      <p class="description__text">Ingredients</p>
+      <ul class="description__list">
+        <li class="description__item">
+          <p class="description__property">Milk</p>
+          <p class="description__value">100ml</p>
+        </li>
+        <li class="description__item">
+          <p class="description__property">Belgian chocolate</p>
+          <p class="description__value">20g</p>
+        </li>
+        <li class="description__item">
+          <p class="description__property">Cream</p>
+          <p class="description__value">150 ml</p>
+        </li>
+        <li class="description__item">
+          <p class="description__property">Cocoa powder</p>
+          <p class="description__value">30g</p>
+        </li>
+        <li class="description__item">
+          <p class="description__property">Sugar</p>
+          <p class="description__value">40g</p>
+        </li>
+        <li class="description__item">
+          <p class="description__property">Vanilla sugar</p>
+          <p class="description__value">10g</p>
+        </li>
+      </ul>
+    </div>
+    <form class="form__modal">
+      <div class="products-form__wrap">
+        <input
+          type="text"
+          name="name"
+          id="products-form-name"
+          class="products-form__input"
+          placeholder=" "
+          required
+        />
+        <label for="products-form-name" class="products-form__label"
+          >Name</label
+        >
+      </div>
+      <div class="products-form__wrap">
+        <input
+          type="tel"
+          name="tel"
+          id="products-form-tel"
+          title="+380123456789"
+          class="products-form__input"
+          placeholder=" "
+          required
+        />
+        <label for="products-form-tel" class="products-form__label"
+          >Phone</label
+        >
+      </div>
+      <div class="products-form__wrap">
+        <textarea
+          name="Comment"
+          id="products-form-textarea"
+          class="products-form__textarea"
+          placeholder=" "
+        ></textarea>
+        <label for="products-form-textarea" class="products-form__label"
+          >Comment</label
+        >
+      </div>
+      <button type="submit" class="button products-form__btn--send">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
