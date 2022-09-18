@@ -16,13 +16,138 @@
             coffee for any mood!</p>    
         </div>   
         <div class="about-btn-wrap">
-            <button type="button" class="about-btn">Read more
+            <button type="button" class="about-btn js-open-modal" data-modal=“3”>Read more
                 <svg class="about-btn__icon" width="12" height="12">
-                    <use href="/src/images/icon.svg#"></use>     
+                    <use href="/src/images/icon.svg#icon-vektra"></use>     
                 </svg>
             </button>
             </div>
         </div>
     </div>
+
+    <!-- <div class="about-backdrop is-hidden"> -->
+        <div class="about-modal modal" data-modal=“3”>
+            <button type="button" class="about-modal__btn-close js-modal-close">
+                <svg class="about-modal__icon" width="20" height="20">
+                    <use href="/src/images/icon.svg#icon-menu_close"></use>
+                </svg>
+            </button>
+                <h3 class="about-modal__title">How it’s made?</h3>
+                <iframe width="448" height="205" class="about-modal__video" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <p class="about-modal__text">Whether you make one bowl of ice cream at home, or 1000 liter in a factory, the science of ice cream stays the same.
+                You’d still want small ice crystals, to make a super smooth ice cream and you’d like to incorporate enough air for a
+                pleasant eating experience.</p>
+                <h3 class="about-modal__after-title">Ice cream making re-cap</h3>
+                <p class="about-modal__text">When making ice cream you have two main goals:
+                
+                Include air in the ice cream to make it light and soft.
+                Freeze part of the water (but not all!) to solidify the ice cream mixture. Ideally, you’d want to create a lot of small
+                ice crystals when doing so.
+                At home, there are plenty of ways to do this. The simplest way is to whip up some cream and mix it with a sweet liquid
+                (as we did here). Alternatively you can make a custard (or other flavourful mixture) and freeze this in an ice cream
+                machine. The ice cream machine will freeze and incorporate air by continuously mixing it.
+                
+                Whipping up less than a liter of cream and mixing it in with your flavors is pretty easy at home. You just take a
+                regular kitchen mixer to do so and then leave it t cool in the fridge or freeze it in the freezer. But, imagine having
+                to do so for 1000 liter of ice cream a day. Whipping some cream because a lot bigger challenge then. Cooling won’t be as
+                easy either, how are you going to get rid of all that heat!
+                
+                Factory ice cream & pasteurization</p>
+                <h3 class="about-modal__after-title">Factory ice cream & pasteurization</h3>
+                <p class="about-modal__text">All these factors have to be taken into account when looking into making ice cream on a factory scale. But there’s more,
+                the first one being food safety of your raw materials. If you make ice cream at home you most probably use milk and
+                cream that have been pasteurized already. However, large scale producers will generally have to do this step themselves
+                since there’s a risk of micro organisms coming back in after pasteurization if it’s not a well controlled and enclosed
+                system</p>
+                <h3 class="about-modal__after-title">Pasteurization & preservation</h3>
+                <p class="about-modal__text">Pasteurization is a preservation method. By heating the dairy ingredients (milk and cream) to a specific temperature for
+                a pre-defined duration you kill off a lot of micro organisms. By reducing the amount of micro organisms (pasteurization
+                never removes all of them), you increase the shelf life of the product. Also, pasteurization will kill off most of the
+                pathogenic micro organisms, those that make you sick, making the ice cream safe for consumption.</p>
+                <h3 class="about-modal__after-title">Pasteurization & ice cream quality</h3>
+                <p class="about-modal__text">Apart from the safety aspect, pasteurization is done for quality purposes as well. Pasteurization of the ice cream also
+                prevents milk fat in the cream from becoming rancid through oxidation by breaking off enzymes which catalyze the
+                reaction.
+                
+                And there’s another benefit of pasteurization. The heat treatment will help the proteins in the milk to hydrate. The
+                heat will partially unfold the proteins which makes it easier for the protein to hydrate and bind to water.</p>
+                <h3 class="about-modal__after-title">Not all is pasteurized</h3>
+                <p class="about-modal__text">A heat treatment is not suitable for all ice cream ingredients though. Whereas the cream and milk benefit from the heat
+                treatment, flavours for instance can break down because of the heat treatment. Therefore, often just the dairy
+                ingredients and other ingredients are added after this first step.</p>
+                
+                <h3 class="about-modal__after-title">Homogenization of factory ice cream</h3>
+                <p class="about-modal__text">Immediately after pasteurization the ice cream mix can be homogenized. Homogenization is a process in which the fat
+                globules from the milk and cream are made into an identical size. All fat particles will have the same size and are
+                smaller than 1 micron.
+                
+                If the particles are the same size this will give a more stable ice cream. These very small fat bubbles serve as a
+                pickering emulsifier. They sit as small particles around the air bubbles in the ice cream preventing the bubbles from
+                coming together and escaping out of the ice cream.Also, the smoothness of the ice cream improves because of all these small fat particles. Instead of large clumps the fat
+                is spread out more.</p>
+                
+                <h3 class="about-modal__after-title">Cooling, aging & freezing</h3>
+                <p class="about-modal__text">The pasteurized mixture then has to cool down. It is cooled down to 0-4ºC, so above freezing temperature. At this point,
+                no air is yet introduced, it is really all about cooling down and getting ready for the next step of freezing and
+                aeration. The mix should be cooled fast enough to make sure no growth of some left over micro organisms will take place.
+                With pasteurization not all micro organisms are killed off, so it is still important to treat the mix carefully.
+                
+                If an ice cream manufacturer wants to add ingredients which are sensitive to heat (e.g. fruits) this will be done once
+                the ice cream has cooled down.</p>
+
+                <h3 class="about-modal__after-title">Aging to prepare for aeration</h3>
+                <p class="about-modal__text">Once the ice cream has cooled down it will be left to age for a while. Aging helps to get the mix ready for being
+                transformed into an ice cream. Several things happen here which will help make a good ice cream.
+                
+                First of all, the fat solidifies. Once the ice cream has cooled down the fat (mostly butter fat) will become solid. The
+                solid fat will help to form the ice cream structure once you start freezing the mixture and forming ice crystals. Also,
+                if emulsifiers are used, these will sit onto the fat surface during this surface which will make it easier to break the
+                fat particles later on.
+                
+                Also, some ingredients may still be hydrating, thus binding to water during this phase, proteins and stabilizers tend to
+                do so.
+                
+                How long you should age your ice cream for really depends on the process you’ll be using in a next step as well as the
+                ingredients you use. If your fats crystallize quickly you probably need less aging time for instance. If you use
+                extrusion to make the final ice cream though, it may need somewhat longer.</p>
+
+                <h3 class="about-modal__after-title">Freezing large ice cream batches</h3>
+                <p class="about-modal__text">Now that the ice cream has been aged and readied for being made into ice cream it is time to transfer it into ice cream.
+                The main challenge when doing this is to cool it down quick enough. This is hard with large quantities of ice cream
+                since a lot of heat has to be taken out of the mix.
+                
+                In factories this is often done using scraped surface heat exchangers. These are large pieces of equipment through which
+                the ice cream mixture flows in a continuous manner and is scraped alongside the surface which is kept very cool. It’s a
+                bit like an ice cream machine, but with material flowing in and out continuously. The temperature of the wall is very
+                cold, down to -30ºC which helps in forming a lot of small crystals. This is the only place in the process where new ice
+                cream crystals are formed. Later on in the process the existing crystals may grow, but no new ones will be formed.
+                
+                But it’s not just freezing what happens at this stage. It is also important to incorporate air into the ice cream. The
+                air will make the ice cream lighter and easier to scoop. Air is injected into the ice cream. This is done under
+                pressure. As a result, the air bubbles are very small, but when the ice cream leaves the pressurized mixer it will
+                expand. Before the pressure is released the scraper breaks down the air bubbles into smaller ones to create a nice
+                dispersion of small bubbles all throughout the ice cream.
+                
+                Ice crystals are formed and air is incorporated, but that’s not all that happens. Those fat crystals that were prepared
+                during the ageing process will sit together partially. This helps in creating a network to stabilize the ice cream.
+                These fat particles can especially stabilize the air bubbles using a phenomenon called ‘pickering’ stabilization. The
+                partially coalesced fat bubbles help to incorporate more air into the ice cream.</p>
+
+                <h3 class="about-modal__after-title">Hardening</h3>
+                <p class="about-modal__text">When the ice cream comes out of the freezer it isn’t yet as hard as your ice cream in a tub. Instead, it will only be
+                around -5ºC. The exact temperature though will depend on the process. The ice cream will have to harden out further.
+                This again has to be done efficiently and fast so it is often done in a tunnel with blowing ice cold air to rapidly
+                remove the heat.
+                
+                To what extent the ice cream has to be cooled at this point really depends on the way it is processed further. If the
+                ice cream still has to be shaped into all sorts of intricate forms it will have to be hard enough to keep its shape, but
+                soft enough to be shaped. On the other hand, if the ice cream is dosed in a tub, it will have to be flexible enough to
+                still flatten out in the tub.After the ice cream has been put in its final packaging it will continue to harden out. If you’ve made ice cream
+                yourself you will recognize that ice cream coming straight from the ice cream machine is still very soft and needs to
+                harden out in the freezer.</p>   
+        </div>
+    <!-- </div> -->
     </div>
 </section>
