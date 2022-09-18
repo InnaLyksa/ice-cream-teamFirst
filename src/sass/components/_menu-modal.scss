@@ -15,6 +15,7 @@
     padding: 16px 16px 16px;
     @include tablet {
       display: block;
+      padding-left: 0;
     }
   }
   &__close {
@@ -39,6 +40,9 @@
   }
   &__link {
     gap: 32px;
+    &:hover {
+      color: $color-accent;
+    }
   }
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -47,14 +51,7 @@
 .button__nav {
   display: flex;
   justify-content: center;
+  margin-bottom: 65px;
+
   // background-color: tomato;
-}
-.buy-now__button {
-  background-color: $color-accent;
-  width: 152px;
-  height: 42px;
-  margin-bottom: 62px;
-  @include tablet {
-    display: none;
-  }
 }
