@@ -4,6 +4,7 @@ button {
   background-color: transparent;
   font-style: normal;
   border-radius: 10px;
+  cursor: pointer;
 
   @include font(600, 14px, 1.25, null);
   @include flex(flex, center, center);

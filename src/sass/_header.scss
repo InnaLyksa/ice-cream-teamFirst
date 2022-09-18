@@ -9,9 +9,9 @@
 //   display: block;
 // }
 .logo {
-  margin: 15px;
+  margin-left: 15px;
   @include desktop {
-    margin-right: 260px;
+    margin-right: 165px;
   }
 }
 .icon-favicon {
@@ -36,20 +36,36 @@
     line-height: 1.25;
 
     color: $text-color;
+    &:hover {
+      color: $color-accent;
+    }
   }
 }
 
 .icon-menu {
   fill: #ffffff;
 }
+
 .header__button {
   background-color: $color-accent;
   width: 152px;
   height: 42px;
-  margin-bottom: 62px;
   display: none;
+  margin-left: 32px;
   @include tablet {
-    display: block;
-    margin: 0;
+    display: flex;
   }
+  &:hover {
+    background-color: $btn-color-hover;
+  }
+  &:focus {
+    color: $text-color;
+    fill: $text-color;
+  }
+  &:disabled {
+    background-color: $btn-color-disabled;
+  }
+}
+.icon-vektra {
+  margin-left: 7px;
 }

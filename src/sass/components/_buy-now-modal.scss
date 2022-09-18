@@ -1,3 +1,21 @@
+.buy-now__button {
+  background-color: $color-accent;
+  width: 152px;
+  height: 42px;
+  @include tablet {
+    display: none;
+  }
+  &:hover {
+    background-color: $btn-color-hover;
+  }
+  &:focus {
+    color: $text-color;
+    fill: $text-color;
+  }
+  &:disabled {
+    background-color: $btn-color-disabled;
+  }
+}
 .modal_buy {
   background-color: $text-color;
   border: 2px solid $color-accent;
