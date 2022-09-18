@@ -1,0 +1,55 @@
+.header {
+  background-color: $bgr-color-main;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+}
+// .favicon {
+//   display: block;
+// }
+.logo {
+  margin: 15px;
+  @include desktop {
+    margin-right: 260px;
+  }
+}
+.icon-favicon {
+  fill: $color-accent;
+}
+.header-nav {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+    gap: 27px;
+  }
+  &__item {
+    padding: 40px 0 40px;
+  }
+  &__link {
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $text-color;
+  }
+}
+
+.icon-menu {
+  fill: #ffffff;
+}
+.header__button {
+  background-color: $color-accent;
+  width: 152px;
+  height: 42px;
+  margin-bottom: 62px;
+  display: none;
+  @include tablet {
+    display: block;
+    margin: 0;
+  }
+}

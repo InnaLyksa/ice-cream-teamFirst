@@ -1,0 +1,311 @@
+.section {
+  padding: 60px 0;
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 82px;
+  }
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 66px;
+  }
+}
+.products {
+  max-width: 1920px;
+  background-image: url(/src/images/products/background.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/products/background-2x.png);
+  }
+  background-color: #fff;
+  // opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 480px) {
+  .products__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.products__label {
+  @include font(800, 18px, 1.22, null);
+
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+
+  @include tablet {
+    @include font(null, 22px, 1.23, null);
+  }
+
+  @include desktop {
+    @include font(null, 30px, null, null);
+  }
+}
+
+.products__title {
+  margin-bottom: 148px;
+
+  @include tablet {
+    margin-bottom: 200px;
+  }
+  @include desktop {
+    letter-spacing: 0.06em;
+    margin-bottom: 303px;
+  }
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 164px;
+
+  @include tablet {
+    gap: 16px;
+  }
+
+  @include desktop {
+    gap: 32px;
+  }
+}
+.products__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  height: 420px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 8px;
+  border-radius: 24px;
+  position: relative;
+
+  @include tablet {
+    width: 224px;
+    height: 428px;
+    padding-right: 26px;
+    padding-left: 26px;
+    flex-basis: calc((100% - 32px) / 3);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    border-radius: 16px;
+  }
+
+  @include desktop {
+    width: 370px;
+    height: 535px;
+    padding-right: 64px;
+    padding-left: 64px;
+    flex-basis: calc((100% - 64px) / 3);
+  }
+}
+
+.products__item--green {
+  background-color: #aec6a5;
+  @include tablet {
+    box-shadow: 0px 5px 20px rgba(212, 20, 67, 0.1);
+  }
+
+  @include desktop {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  }
+}
+
+.products__item--green::before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
+  background-image: url(/src/images/products/mob-ice-1.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/products/mob-ice-1-2x.png);
+  }
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 10px;
+  background-size: cover;
+  position: absolute;
+  top: -95px;
+  left: 40px;
+  @include tablet {
+    background-image: url(/src/images/products/tab-ice-1.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/tab-ice-1-2x.png);
+    }
+    left: 12px;
+  }
+  @include desktop {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-image: url(/src/images/products/desc-ice-1.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/desc-ice-1-2x.png);
+    }
+    top: -170px;
+    left: 35px;
+  }
+}
+
+.products__item--yellow {
+  background-color: #efd478;
+}
+.products__item--yellow::before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5px 20px rgba(153, 114, 23, 0.25);
+  background-image: url(/src/images/products/mob-ice-2.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/products/mob-ice-2-2x.png);
+  }
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 10px;
+  background-size: cover;
+  position: absolute;
+  top: -95px;
+  left: 40px;
+  @include tablet {
+    background-image: url(/src/images/products/tab-ice-2.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/tab-ice-2-2x.png);
+    }
+    left: 12px;
+  }
+  @include desktop {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-image: url(/src/images/products/desc-ice-2.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/desc-ice-2-2x.png);
+    }
+    top: -170px;
+    left: 35px;
+  }
+}
+
+.products__item--brown {
+  background-color: #d6936d;
+}
+
+.products__item--brown::before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  background-image: url(/src/images/products/mob-ice-3.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/products/mob-ice-3-2x.png);
+  }
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 10px;
+  background-size: cover;
+  position: absolute;
+  top: -95px;
+  left: 40px;
+  @include tablet {
+    background-image: url(/src/images/products/tab-ice-3.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/tab-ice-3-2x.png);
+    }
+    left: 12px;
+  }
+  @include desktop {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-image: url(/src/images/products/desc-ice-3.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/desc-ice-3-2x.png);
+    }
+    top: -170px;
+    left: 35px;
+  }
+}
+
+.products__wrap {
+  margin-top: 123px;
+  text-align: center;
+
+  @include tablet {
+    margin-top: 108px;
+  }
+  @include desktop {
+    margin-top: 166px;
+  }
+}
+
+.products__sub-title {
+  @include font(null, 20px, 1.2, null);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @include tablet {
+    @include font(null, 22px, 1.23, null);
+  }
+  @include desktop {
+    @include font(null, 30px, null, null);
+    margin-bottom: 65px;
+  }
+}
+
+.products__text {
+  font-size: 14px;
+
+  @include desktop {
+    font-size: 16px;
+  }
+}
+.products__btn {
+  width: 60px;
+  height: 24px;
+  align-self: flex-end;
+
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+}
