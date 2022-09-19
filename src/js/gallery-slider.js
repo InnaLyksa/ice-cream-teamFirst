@@ -1,8 +1,11 @@
 $('.gallery__list').slick({
     slidesToShow: 1,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplay: true,
-    speed: 8000,
-    autoplaySpeed:3000,
+    speed: 4000,
+    autoplaySpeed:2000,
     arrows: false,
+    cssEase: 'linear',
+    infinite: true,
+    fade: true,
   });
