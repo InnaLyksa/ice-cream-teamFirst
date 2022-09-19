@@ -7,15 +7,20 @@
         <div class="img-wrap__cow"></div>
     </div>
     <div class="about-field-two">
-    <div class="about-text-wrap">
-         <p class="about-text-wrap__text about-text-wrap__one">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and
-            we follow it when creating our handmade desserts.</p>
-         <p class="about-text-wrap__text about-text-wrap__two">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children
-            from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
-         <p class="about-text-wrap__text about-text-wrap__three">This is enough to choose ice cream and
-            coffee for any mood!</p>    
-        </div>   
-        <div class="about-btn-wrap">
+        <ul class="about-list">
+            <li class="about-list__item">
+                <p class="about-list__text about-list-about-list__text--one">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and
+                we follow it when creating our handmade desserts.</p>
+            </li>
+            <li class="about-list__item">
+                <p class="about-list__text about-list-about-list__text--two">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children
+                from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
+            </li>
+            <li class="about-list__item">
+                <p class="about-list__text about-list-about-list__text--three">This is enough to choose ice cream and coffee for any mood!</p>
+            </li>
+        </ul>
+  <div class="about-btn-wrap">
             <button type="button" class="about-btn js-open-modal" data-modal=“3”>Read more
                 <svg class="about-btn__icon" width="12" height="12">
                     <use href="/src/images/icon.svg#icon-vektra"></use>     
@@ -24,8 +29,7 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="about-backdrop is-hidden"> -->
+    
         <div class="about-modal modal" data-modal=“3”>
             <button type="button" class="about-modal__btn-close js-modal-close">
                 <svg class="about-modal__icon" width="20" height="20">
@@ -33,7 +37,7 @@
                 </svg>
             </button>
                 <h3 class="about-modal__title">How it’s made?</h3>
-                <iframe width="448" height="205" class="about-modal__video" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
+                <iframe  class="about-modal__video" src="https://www.youtube.com/embed/8WEMZ86Eho8" title="YouTube video player"
                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
                 <p class="about-modal__text">Whether you make one bowl of ice cream at home, or 1000 liter in a factory, the science of ice cream stays the same.
@@ -148,6 +152,5 @@
                 yourself you will recognize that ice cream coming straight from the ice cream machine is still very soft and needs to
                 harden out in the freezer.</p>   
         </div>
-    <!-- </div> -->
     </div>
 </section>
