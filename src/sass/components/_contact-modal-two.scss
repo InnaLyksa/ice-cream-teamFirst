@@ -20,15 +20,19 @@
     }
     &__title {
         display: block;
+        width: 221px;
         font-family: $font-second;
     @include font(400,16px,1.5,$spacing-big);
         color: $color-primary;
         align-items: center;
         text-align: center;
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     @include tablet {
         margin-bottom: 24px;
         @include font(400,20px,1.4,$spacing-big);
+        width: 322px;
     }
     }
 
@@ -40,6 +44,7 @@
         @include tablet{
             @include font (400,16px,1.4,$spacing-medium);
         margin-bottom: 32px;
+       
         }
     }
 
@@ -54,6 +59,7 @@
        @include tablet {
         margin-bottom: 16px;
         padding-left: 16px;
+        width: 368px;
        }
     }
 
@@ -71,6 +77,7 @@
             margin-bottom: 32px;
             padding-left: 16px;
             padding-top: 11px;
+            width: 368px;
         }
     }
 }
@@ -109,4 +116,7 @@ color: $color-primary;
     color: $color-primary;
     
 }
-        
+   .contact-input {
+    display: block;
+   text-align: center;
+   }     
