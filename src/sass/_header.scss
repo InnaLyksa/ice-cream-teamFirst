@@ -11,7 +11,7 @@
 .logo {
   margin-left: 15px;
   @include desktop {
-    margin-right: 165px;
+    margin-right: 265px;
   }
 }
 .icon-favicon {
@@ -19,6 +19,8 @@
 }
 .header-nav {
   display: none;
+  margin: 40px 0 40px;
+
   @include desktop {
     display: flex;
   }
@@ -26,14 +28,14 @@
     display: flex;
     gap: 27px;
   }
-  &__item {
-    padding: 40px 0 40px;
-  }
+  // &__item {
+  // }
   &__link {
     font-family: $font-main;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
+    padding: 40px 0 40px;
 
     color: $text-color;
     &:hover {
@@ -54,6 +56,9 @@
   margin-left: 32px;
   @include tablet {
     display: flex;
+  }
+  @include desktop {
+    margin-left: auto;
   }
   &:hover {
     background-color: $btn-color-hover;

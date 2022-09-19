@@ -24,6 +24,7 @@
 .buy-now__container {
   display: flex;
   flex-direction: column;
+  padding: 0 28px 0 28px;
 }
 .icon-modal-close {
   margin-left: auto;
@@ -35,7 +36,62 @@
   font-size: 16px;
   line-height: 1.5;
   margin-top: 28px;
-  //   text-align: center;
+  text-align: center;
 
   color: $color-primary;
+}
+.modal.modal_buy {
+  max-width: 480px;
+  min-height: 500px;
+  overflow: auto;
+  @include tablet {
+    max-width: 568px;
+    min-height: 644px;
+  }
+}
+.buy-now__list {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+.buy-now__item {
+  width: 132px;
+  height: 200px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15.78;
+}
+.wrap {
+  width: 132px;
+  // height: 200px;
+  background-image: url(/src/images/green.png);
+  border-radius: 15.78;
+
+  position: relative;
+}
+.buy-now--green {
+  border: 2px solid #96af8c;
+}
+.buy-now--yellow {
+  border: 2px solid #efd478;
+  background-color: #efd478;
+}
+.buy-now--brown {
+  border: 2px solid #d6936d;
+}
+.buy-now__form {
+  display: flex;
+  flex-direction: column;
+}
+.buy-now__label {
+  width: 100%;
+}
+.buy-now__input {
+  width: 100%;
+}
+.buy-now__textarea {
+  width: 100%;
 }
