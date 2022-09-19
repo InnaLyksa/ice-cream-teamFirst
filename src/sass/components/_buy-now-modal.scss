@@ -1,3 +1,12 @@
+.modal.modal_buy {
+  max-width: 480px;
+  min-height: 500px;
+  overflow: auto;
+  @include tablet {
+    max-width: 568px;
+    height: 650px;
+  }
+}
 .buy-now__button {
   background-color: $color-accent;
   width: 152px;
@@ -23,6 +32,7 @@
 }
 .buy-now__container {
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 0 28px 0 28px;
 }
@@ -35,20 +45,12 @@
   font-family: $font-second;
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 28px;
+  margin-top: 14px;
   text-align: center;
-
+  margin-bottom: 85px;
   color: $color-primary;
 }
-.modal.modal_buy {
-  max-width: 480px;
-  min-height: 500px;
-  overflow: auto;
-  @include tablet {
-    max-width: 568px;
-    min-height: 644px;
-  }
-}
+
 .buy-now__list {
   gap: 20px;
   display: flex;
@@ -56,21 +58,111 @@
   justify-content: center;
   flex-direction: column;
   align-content: center;
+  gap: 85px;
+  margin-bottom: 25px;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 .buy-now__item {
   width: 132px;
-  height: 200px;
+  height: 135px;
   border-radius: 10px;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.78;
 }
-.wrap {
+.wrap--green {
+  content: ' ';
   width: 132px;
-  // height: 200px;
-  background-image: url(/src/images/green.png);
-  border-radius: 15.78;
+  height: 140px;
+  border-radius: 100px;
+  top: -50%;
+  left: -1.7%;
 
-  position: relative;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #9cbe8fb2;
+  box-shadow: 0px 10px 20px rgba(10, 136, 23, 0.25);
+  background-image: url(/src/images/green.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right -4px bottom 10px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/green-2x.png);
+  }
+}
+.wrap--yellow {
+  content: ' ';
+  width: 132px;
+  height: 140px;
+  border-radius: 100px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #f8d24eb2;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  background-image: url(/src/images/yellow.png);
+  top: -50%;
+  left: -1.7%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right -4px bottom 10px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/yellow-2x.png);
+  }
+}
+.wrap--brown {
+  content: ' ';
+  width: 132px;
+  height: 140px;
+  border-radius: 100px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d5753fb2;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  background-image: url(/src/images/brown.png);
+  top: -50%;
+  left: -1.7%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right -4px bottom 10px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/brown-2x.png);
+  }
+}
+.buy-now__set {
+  margin-top: 95px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-align: center;
+  letter-spacing: $spacing-medium;
+  text-transform: uppercase;
+
+  color: #131313;
 }
 .buy-now--green {
   border: 2px solid #96af8c;
@@ -85,13 +177,53 @@
 .buy-now__form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
+  gap: 16px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 .buy-now__label {
   width: 100%;
 }
 .buy-now__input {
-  width: 100%;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  min-width: 224px;
+  height: 42px;
+  padding: 0 0 0 16px;
+
+  @include tablet {
+    width: 368px;
+  }
 }
 .buy-now__textarea {
-  width: 100%;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  min-width: 224px;
+  height: 84px;
+  resize: none;
+  padding: 11px 0 0 16px;
+  @include tablet {
+    width: 368px;
+  }
+}
+.button__submit {
+  width: 114px;
+  height: 42px;
+  align-items: center;
+  background: #f8d24e;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  &:hover {
+    background-color: $btn-color-hover;
+  }
+  &:focus {
+    color: $text-color;
+  }
+  &:disabled {
+    background-color: $btn-color-disabled;
+  }
 }
