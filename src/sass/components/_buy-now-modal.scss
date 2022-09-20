@@ -2,7 +2,7 @@
   max-width: 480px;
   min-height: 500px;
   overflow: auto;
-  transform: translate(0%, 0%);
+  transform: translate(-50%, -50%);
 
   @include tablet {
     max-width: 568px;
