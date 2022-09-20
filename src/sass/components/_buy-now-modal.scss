@@ -217,6 +217,10 @@
     width: 368px;
   }
 }
+.buy-now__input:not(:focus):not(:placeholder-shown):invalid,
+.buy-now__textarea:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.7);
+}
 .button__submit {
   width: 114px;
   height: 42px;
