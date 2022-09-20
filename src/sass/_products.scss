@@ -308,9 +308,9 @@
   height: 24px;
   align-self: flex-end;
 
-  cursor: pointer;
   margin-right: auto;
   margin-left: auto;
+  cursor: url(/src/images/cursor.png), auto;
 
   & .products__icon {
     transform: scale(1);
