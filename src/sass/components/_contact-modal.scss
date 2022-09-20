@@ -1,56 +1,55 @@
 .contact-modal {
-   position: relative;
-    width: 280px;
-    height: 365px;
-    padding: 28px;
-    background-color: #FCFCFC;
-    border: 2px solid #F8D24E;
-    border-radius: 10px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 30;
-    transition: 0.3s all;
-    overflow: auto;
-    @include tablet {
-        width: 568px;
+  position: relative;
+  width: 280px;
+  height: 365px;
+  padding: 28px;
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  transition: 0.3s all;
+  overflow: auto;
+  @include tablet {
+    width: 568px;
     height: 458px;
     padding: 32px 60px;
+  }
 
+  &__btn-close {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+    @include tablet {
+      top: 24px;
+      right: 24px;
     }
+  }
 
-    &__btn-close {
-        display: block;
-        position: absolute;
-        top: 11px;
-        right: 11px;
-        cursor: pointer;
-        @include tablet {
-            top: 24px;
-            right: 24px;
-        }
-    }
-
-    &__title {
-        display: block;
+  &__title {
+    display: block;
     font-family: $font-second;
-    @include font(400,16px,1.5,$spacing-big);
+    @include font(400, 16px, 1.5, $spacing-big);
     color: $color-primary;
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
     @include tablet {
-        margin-bottom: 32px;
-        @include font(400,20px,1.4,$spacing-big);
+      margin-bottom: 32px;
+      @include font(400, 20px, 1.4, $spacing-big);
     }
-    }
+  }
 
-    &__button {
-        background: #F8D24E;
+  &__button {
+    background: #f8d24e;
     border-radius: 10px;
     margin: 0 auto;
-    
+
     width: 134px;
     height: 42px;
     display: flex;
@@ -58,49 +57,40 @@
     justify-content: center;
     font-family: $font-main;
     transition: background-color $trans-duration $timing-function;
-        &:hover {
-            background-color: $btn-color-hover;
-        }
-        &:focus {
-            background-color: #0A8817;
-            color: $text-color;
-        }
-        &:disabled {
-            background-color: #ABABAB;
-        }   
-        @include font(600,12px,1.25,$spacing-small);
+    &:hover {
+      background-color: $btn-color-hover;
+    }
+    &:focus {
+      background-color: #0a8817;
+      color: $text-color;
+    }
+    &:disabled {
+      background-color: #ababab;
+    }
+    @include font(600, 12px, 1.25, $spacing-small);
     color: $color-primary;
     @include tablet {
-        @include font(600,14px,1.2,$spacing-medium);
+      @include font(600, 14px, 1.2, $spacing-medium);
     }
+  }
+
+  &__img {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 24px;
+
+    @include mobile {
+      width: 224px;
+      height: 199px;
     }
 
-    &__img {
-        display: block;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        margin-bottom: 24px;
-       
-        @include mobile {
-            width: 224px;
-            height: 199px;
-        }
-    
-        @include tablet {
-            width: 448px;
-            height: 260px;
-            margin-bottom: 32px;
-        }
+    @include tablet {
+      width: 448px;
+      height: 260px;
+      margin-bottom: 32px;
     }
+  }
 }
-
-
-
-
-
-
-
-
-
