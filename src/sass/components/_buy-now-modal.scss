@@ -2,6 +2,8 @@
   max-width: 480px;
   min-height: 500px;
   overflow: auto;
+  transform: translate(0%, 0%);
+
   @include tablet {
     max-width: 568px;
     height: 650px;
@@ -72,6 +74,10 @@
   border-radius: 10px;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.78;
+}
+.buy-now__item:checked {
+  width: 50px;
+  height: 50px;
 }
 .wrap--green {
   content: ' ';
@@ -152,6 +158,7 @@
     background-image: url(/src/images/brown-2x.png);
   }
 }
+
 .buy-now__set {
   margin-top: 95px;
   font-weight: 700;
@@ -183,9 +190,9 @@
     margin-bottom: 32px;
   }
 }
-.buy-now__label {
-  width: 100%;
-}
+// .buy-now__label {
+//   width: 100%;
+// }
 .buy-now__input {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
