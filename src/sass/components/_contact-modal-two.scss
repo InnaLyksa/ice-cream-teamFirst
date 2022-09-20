@@ -1,4 +1,4 @@
-.contact-modal-two {
+.contact-modal-two.modal {
   position: relative;
   width: 280px;
   height: 674px;
@@ -6,18 +6,20 @@
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30;
-  transition: 0.3s all;
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // z-index: 30;
+  // transition: 0.3s all;
   overflow: auto;
   @include tablet {
     width: 568px;
     height: 668px;
     padding: 32px 60px;
   }
+}
+.contact-modal-two {
   &__title {
     display: block;
     width: 221px;
