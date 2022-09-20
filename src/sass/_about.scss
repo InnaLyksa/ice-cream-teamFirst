@@ -262,7 +262,8 @@
   position: fixed;
   top: 8px;
   right: 8px;
-  cursor: pointer;
+  cursor: url('../images/cursor.png'), auto;
+  // cursor: pointer;
   @include tablet {
     top: 20px;
     right: 20px;
@@ -329,4 +330,6 @@
     margin-bottom: 10px;
   }
 }
+
+
 
