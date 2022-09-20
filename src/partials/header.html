@@ -1,20 +1,22 @@
 <header id="home" class="header">
   <div class="container header_container">
-    <picture class="logo">
-      <source
-        srcset="./images/logo-desk.png 1x, ./images/logo-desk-2x.png 2x"
-        media="(min-width:1200px)"
-      />
-      <source
-        srcset="./images/logo-tab.png 1x, ./images/logo-tab-2x.png 2x"
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="./images/logo.png 1x, ./images/logo-2x.png 2x"
-        media="(max-width:767px)"
-      />
-      <img src="./images/logo.png" alt=" Logo" />
-    </picture>
+    <a class="logo-link" href="">
+      <picture class="logo">
+        <source
+          srcset="./images/logo-desk.png 1x, ./images/logo-desk-2x.png 2x"
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="./images/logo-tab.png 1x, ./images/logo-tab-2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/logo.png 1x, ./images/logo-2x.png 2x"
+          media="(max-width:767px)"
+        />
+        <img src="./images/logo.png" alt=" Logo" />
+      </picture>
+    </a>
 
     <nav class="header-nav">
       <ul class="header-nav__list">
@@ -80,16 +82,16 @@
     <nav class="menu-nav">
       <ul class="menu-nav__list">
         <li class="menu-nav__item">
-          <a class="menu-nav__link" href="">Home</a>
+          <a class="menu-nav__link" href="#home">Home</a>
         </li>
         <li class="menu-nav__item">
-          <a class="menu-nav__link" href="">How it’s made?</a>
+          <a class="menu-nav__link" href="#about">How it’s made?</a>
         </li>
         <li class="menu-nav__item">
-          <a class="menu-nav__link" href="">Our products</a>
+          <a class="menu-nav__link" href="#products">Our products</a>
         </li>
         <li class="menu-nav__item">
-          <a class="menu-nav__link" href="">Contact</a>
+          <a class="menu-nav__link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
@@ -114,10 +116,8 @@
     <p class="modal__title">Buy now</p>
     <ul class="buy-now__list">
       <li class="buy-now__item buy-now--green">
-        <button type="button" class="button">
-          <div class="wrap--green"></div>
-          <p class="buy-now__set">Ice cream</p>
-        </button>
+        <div class="wrap--green"></div>
+        <p class="buy-now__set">Ice cream</p>
       </li>
       <li class="buy-now__item buy-now--yellow">
         <div class="wrap--yellow"></div>
@@ -131,29 +131,29 @@
     </ul>
     <form autocomplete="off" class="buy-now__form">
       <input
-        pattern="[a-zA-Zа-яА-ЯіІїЇєЄ]*"
         class="buy-now__input"
-        id="user-name"
-        placeholder="Name"
+        type="text"
         name="name"
-        type="name"
+        title="Name (any letter in any case)"
+        minlength="3"
+        placeholder="Name"
         required
       />
       <input
-        title="Phone (+380 00000000)"
         class="buy-now__input"
-        id="user-tel"
-        required
         type="tel"
         name="tel"
+        pattern="\+[0-9]{12}"
+        title="Phone (+380111111111)"
+        minlength="13"
         placeholder="Phone"
-        pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+        required
       />
 
       <textarea
         class="buy-now__textarea"
         placeholder="Comment"
-        name="comment"
+        name="Comment"
       ></textarea>
     </form>
     <button class="button button__submit" type="submit">Submit</button>

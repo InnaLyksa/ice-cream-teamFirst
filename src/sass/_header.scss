@@ -5,9 +5,10 @@
   display: flex;
   align-items: center;
 }
-// .favicon {
-//   display: block;
-// }
+.logo-link {
+  display: flex;
+  cursor: url(/src/images/cursor.png), auto;
+}
 .logo {
   margin-left: 15px;
   @include desktop {

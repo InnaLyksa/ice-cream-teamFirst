@@ -2,7 +2,7 @@
   max-width: 480px;
   min-height: 500px;
   overflow: auto;
-  transform: translate(0%, 0%);
+  transform: translate(-50%, -50%);
 
   @include tablet {
     max-width: 568px;
@@ -216,6 +216,10 @@
   @include tablet {
     width: 368px;
   }
+}
+.buy-now__input:not(:focus):not(:placeholder-shown):invalid,
+.buy-now__textarea:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.7);
 }
 .button__submit {
   width: 114px;
