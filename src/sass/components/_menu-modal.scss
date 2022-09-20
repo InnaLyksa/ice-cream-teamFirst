@@ -5,24 +5,33 @@
     display: flex;
     flex-direction: column;
   }
+  &__open {
+    margin-left: auto;
+    padding: 16px;
+    // @include tablet {
+    //   display: block;
+    // }
+    @include desktop {
+      display: none;
+    }
+  }
   &__nav {
     display: flex;
     align-items: center;
-  }
-  &__open {
-    // display: block;
-    margin-left: auto;
-    padding: 16px 16px 16px;
-    @include tablet {
-      display: block;
-      padding-left: 0;
+    @include desktop {
+      margin-right: auto;
     }
   }
+
   &__close {
     position: relative;
     fill: #ffffff;
     margin-left: auto;
-    padding: 16px 16px 16px;
+    padding: 16px;
+    // @include tablet {
+    //   padding-left: 0;
+    //   padding-right: 0;
+    // }
   }
 }
 .menu-nav {
