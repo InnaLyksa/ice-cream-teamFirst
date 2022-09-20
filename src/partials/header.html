@@ -1,4 +1,4 @@
-<header class="header">
+<header id="home" class="header">
   <div class="container header_container">
     <picture class="logo">
       <source
@@ -19,20 +19,16 @@
     <nav class="header-nav">
       <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a class="header-nav__link" href="/src/index.html">Home</a>
+          <a class="header-nav__link" href="#home">Home</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="">How it’s made?</a>
+          <a class="header-nav__link" href="#about">How it’s made?</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="./partials/products.html"
-            >Our products</a
-          >
+          <a class="header-nav__link" href="#products">Our products</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="/src/partials/contacts.html"
-            >Contact</a
-          >
+          <a class="header-nav__link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
@@ -84,20 +80,16 @@
     <nav class="menu-nav">
       <ul class="menu-nav__list">
         <li class="menu-nav__item">
-          <a class="menu-nav__link" href="./index.html">Home</a>
+          <a class="menu-nav__link" href="">Home</a>
         </li>
         <li class="menu-nav__item">
-          <a class="menu-nav__link" href="./partials/reviews.html"
-            >How it’s made?</a
-          >
+          <a class="menu-nav__link" href="">How it’s made?</a>
         </li>
         <li class="menu-nav__item">
-          <a class="menu-nav__link" href="./partials/products.html"
-            >Our products</a
-          >
+          <a class="menu-nav__link" href="">Our products</a>
         </li>
         <li class="menu-nav__item">
-          <a class="menu-nav__link" href="./partials/contacts.html">Contact</a>
+          <a class="menu-nav__link" href="">Contact</a>
         </li>
       </ul>
     </nav>
@@ -122,8 +114,10 @@
     <p class="modal__title">Buy now</p>
     <ul class="buy-now__list">
       <li class="buy-now__item buy-now--green">
-        <div class="wrap--green"></div>
-        <p class="buy-now__set">Ice cream</p>
+        <button type="button" class="button">
+          <div class="wrap--green"></div>
+          <p class="buy-now__set">Ice cream</p>
+        </button>
       </li>
       <li class="buy-now__item buy-now--yellow">
         <div class="wrap--yellow"></div>
@@ -136,23 +130,31 @@
       </li>
     </ul>
     <form autocomplete="off" class="buy-now__form">
-      <label class="buy-now__label" for="user-name">
-        <input class="buy-now__input" placeholder="Name" type="text"
-      /></label>
-      <label class="buy-now__label" for="user-tel">
-        <input class="buy-now__input" placeholder="Phone" type="text"
-      /></label>
-      <label>
-        <!-- <span>Comment</span> -->
-        <textarea
-          class="buy-now__textarea"
-          name="Comment"
-          placeholder="Comment"
-          id=""
-          cols="30"
-          rows="10"
-        ></textarea>
-      </label>
+      <input
+        pattern="[a-zA-Zа-яА-ЯіІїЇєЄ]*"
+        class="buy-now__input"
+        id="user-name"
+        placeholder="Name"
+        name="name"
+        type="name"
+        required
+      />
+      <input
+        title="Phone (+380 00000000)"
+        class="buy-now__input"
+        id="user-tel"
+        required
+        type="tel"
+        name="tel"
+        placeholder="Phone"
+        pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+      />
+
+      <textarea
+        class="buy-now__textarea"
+        placeholder="Comment"
+        name="comment"
+      ></textarea>
     </form>
     <button class="button button__submit" type="submit">Submit</button>
   </div>
