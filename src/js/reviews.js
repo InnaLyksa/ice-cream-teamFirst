@@ -1,4 +1,3 @@
-
 $('.reviews-list').slick({
   dots: true,
   // direction: "horizontal",
@@ -7,10 +6,7 @@ $('.reviews-list').slick({
   slidesToShow: 1,
   adaptiveHeight: true,
   arrows: false,
-  // autoplay: true,
+  autoplay: true,
   dotsClass: 'slick-dots',
   dots: '.reviews-button',
-
-}
-);
-
+});
