@@ -1,4 +1,13 @@
+.menu-modal.active,
+.overlay.active {
+  transform: scale(100%);
+}
+
 .menu-modal {
+  top: 0;
+  left: 0;
+  transform: translateX(50%);
+
   background-color: $bgr-color-main;
   > .container {
     height: 100%;
