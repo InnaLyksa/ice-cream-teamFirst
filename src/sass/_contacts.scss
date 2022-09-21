@@ -1,7 +1,6 @@
 .contacts {
   background-color: #84a178;
   padding-top: 0px;
-  // position: relative;
 }
 .contacts .container {
   // top: -393px;
@@ -17,6 +16,15 @@
     padding-left: 16px;
   }
 }
+.contact__address {
+  margin-bottom: -345px;
+  @include tablet {
+    margin-bottom: -315px;
+  }
+  @include desktop {
+    margin-bottom: -96px;
+  }
+}
 .contacts__list {
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +38,8 @@
   }
 }
 .contacts__item {
+  position: relative;
+  top: -350px;
   padding-top: 40px;
   padding-right: 32px;
   padding-bottom: 40px;
@@ -40,11 +50,13 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   @include tablet {
+    top: -310px;
     width: 224px;
     height: 528px;
     width: calc((100% - 32px) / 3);
   }
   @include desktop {
+    top: -96px;
     width: 368px;
     height: 528px;
     padding-left: 40px;
