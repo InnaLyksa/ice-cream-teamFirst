@@ -183,7 +183,7 @@
   }
 }
 
-.about-list-about-list__text--two {
+.about-list__text--two {
   line-height: 1.62;
   @include tablet {
     line-height: 1.76;
@@ -192,7 +192,7 @@
     line-height: 1.94;
   }
 }
-.about-list-about-list__text--three {
+.about-list__text--three {
   @media screen and (max-width: 767px) {
     display: none;
   }
