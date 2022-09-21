@@ -75,6 +75,10 @@
     }
   }
 }
+.contact-modal-two__input:not(:focus):not(:placeholder-shown):invalid,
+.contact-modal-two__textarea:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.7);
+}
 
 .contact-modal__submit {
   width: 121px;

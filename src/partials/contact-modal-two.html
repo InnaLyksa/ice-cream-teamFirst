@@ -20,6 +20,8 @@
         type="text"
         class="contact-modal-two__input"
         name="user-name"
+        pattern="[a-zA-Zа-яА-ЯіІїЇєЄ]*"
+        title="Name (any letter in any case)"
         placeholder="Name"
         required
       />
@@ -27,6 +29,9 @@
         type="tel"
         class="contact-modal-two__input"
         name="user-tel"
+        pattern="\+[0-9]{12}"
+        title="Phone (+380123456789)"
+        minlength="13"
         placeholder="Phone"
         required
       />
@@ -34,6 +39,7 @@
         type="email"
         class="contact-modal-two__input"
         name="user-email"
+        title="Email (exsample@dog.com)"
         placeholder="Email"
         required
       />
@@ -47,4 +53,3 @@
     <button type="submit" class="contact-modal__submit">Submit</button>
   </form>
 </div>
-<!-- </div> -->
