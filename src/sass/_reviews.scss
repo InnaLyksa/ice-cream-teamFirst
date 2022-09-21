@@ -1,32 +1,28 @@
 .section-reviews{
         background-image: url(/src/images/products/background.png);
         
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image: url(/src/images/products/background-2x.png);
-            }
+          
         
             background-color: #fff;
-            // opacity: 0.5;
+           
 
   
 @media screen and(max-width:480px){
-   padding-top: 200px; 
+   padding-top: 200px;
+   
 }
 padding-top: 281px;
     @include tablet {
         padding-top: 317px;
+        
     }
 
     @include desktop {
         padding-top: 540px;
+       
     }
 }
 .reviews-container{
-
-//    padding-top: 223px;
-//    padding-bottom: 75px;
 
         margin-left: auto;
         margin-right: auto;
@@ -39,7 +35,6 @@ padding-top: 281px;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.86;
-        /* identical to box height, or 37px */
         text-align: center;
     
         color: #131313;
@@ -48,8 +43,16 @@ padding-top: 281px;
         }
 }
 .reviews-text{
-margin-right: 20px;
-margin-left: 20px;
+    @media screen and( max-width: 480px){
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+    }
+max-width: 280px;
+margin-left: auto;
+margin-right: auto;
         
     padding-top: 34px;
     padding-bottom: 34px;
@@ -59,7 +62,6 @@ margin-left: 20px;
         font-weight: 400;
         font-size: 12px;
         line-height: 2.55;
-        /* or 31px */
         text-align: center;
         color: #FCFCFC;
         background: #84A178;
@@ -71,20 +73,27 @@ margin-left: 20px;
         padding-right: 80px;
         margin-right: auto;
         margin-left: auto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        text-align: center;
         }
 
         @include desktop{
-            max-width: 968px;
-            padding-left: 109px;
-            padding-right: 109px;
+        max-width: 968px;
+        padding-left: 109px;
+        padding-right: 109px;
+        margin-right: auto;
+        margin-left: auto;
         }
    
 }
 .reviews-images{
    margin-left: auto;
    margin-right: auto;
-    margin-bottom: 28px;
-    border-radius: 50%;
+   margin-bottom: 28px;
+   border-radius: 50%;
 }
 
 .reviews-button{
@@ -97,27 +106,66 @@ margin-left: 20px;
     margin-right: 18px;
 
 }
-.section-button{
-    padding-bottom: 100px;
+
+.comment__choise{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+
+    @include tablet {
+            margin-top: 32px;
+        }
     
+        @include desktop {
+            margin-top: 32px;
+        }
 }
-.slick-dots{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   
+.comment__choise li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
 }
-// .slick-dots .li{
-//     height: 12px;
-//     width: 12px;
-//     border-radius: 50%;
-//     background-color: #D9D9D9;
+
+.comment__choise li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: url("/src/images/cursor.png"),
+    auto;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.comment__choise li:before {
+    content: '';
+    line-height: 20px;
+    position: absolute;
+    cursor: url("/src/images/cursor.png"), auto;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
 
 
-// .slick-active{
- 
-//     background-color: #84A178;
-// }
+}
+
+.comment__choise li:hover::before {
+    background-color: #84A178;
+}
+
+ .comment__choise li:active::before {
+    background-color: #84A178;
+}
