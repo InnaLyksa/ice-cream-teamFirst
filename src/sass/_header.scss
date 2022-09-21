@@ -16,6 +16,8 @@
   }
 }
 .icon-favicon {
+  transition: fill $trans-duration $timing-function;
+
   fill: $color-accent;
 }
 .header-nav {
@@ -39,6 +41,8 @@
     padding: 40px 0 40px;
 
     color: $text-color;
+    transition: color $trans-duration $timing-function;
+
     &:hover {
       color: $color-accent;
     }
@@ -55,6 +59,9 @@
   height: 42px;
   display: none;
   margin-left: 32px;
+  z-index: 4;
+  color: $timing-function $trans-duration;
+
   @include tablet {
     display: flex;
   }

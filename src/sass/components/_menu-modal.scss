@@ -2,7 +2,13 @@
 .overlay.active {
   transform: scale(100%);
 }
-
+.icon-menu__close {
+  transition: fill $trans-duration $timing-function;
+}
+.icon-menu__close:focus,
+.icon-menu__close:hover {
+  fill: $color-accent;
+}
 .menu-modal {
   top: 0;
   left: 0;
@@ -17,9 +23,8 @@
   &__open {
     margin-left: auto;
     padding: 16px;
-    // @include tablet {
-    //   display: block;
-    // }
+    z-index: 4;
+    // fill: rgb(179, 6, 6);
     @include desktop {
       display: none;
     }
@@ -37,11 +42,16 @@
     fill: #ffffff;
     margin-left: auto;
     padding: 16px;
-    // @include tablet {
-    //   padding-left: 0;
-    //   padding-right: 0;
-    // }
   }
+}
+.icon-menu:focus,
+.icon-menu:hover {
+  fill: $color-accent;
+}
+.icon-menu {
+  transition: fill $trans-duration $timing-function;
+
+  fill: rgb(255, 255, 255);
 }
 .menu-nav {
   margin-bottom: auto;
@@ -58,8 +68,10 @@
   }
   &__link {
     gap: 32px;
+    transition: color $trans-duration $timing-function;
+
     &:hover {
-      color: $color-accent;
+      color: $color-primary;
     }
   }
   &__item:not(:last-child) {
@@ -70,6 +82,4 @@
   display: flex;
   justify-content: center;
   margin-bottom: 65px;
-
-  // background-color: tomato;
 }
