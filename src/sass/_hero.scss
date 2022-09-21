@@ -4,10 +4,6 @@
 li,ul {
     list-style: none;
 }
-.hero__container {
-    box-sizing: border-box;
-    position: relative;
-}
 //*hero 1200px*//
 .hero {
     height: 664px;
@@ -16,7 +12,11 @@ li,ul {
     background-position: bottom;
     background-image: url('../images/hero/points.png');
     background-repeat: no-repeat;
-
+    
+    &__container {
+        box-sizing: border-box;
+        position: relative;
+    }
 &__left-top {
     position: absolute;
     top: 15px;
@@ -50,9 +50,14 @@ margin: 0px;
 }
 &__products-button:hover {
     border: 2px solid #0A8817;
-}&__products-button:focus {
+}
+&__products-button:focus {
     border: 2px solid #0A8817;
     color: #FCFCFC;
+}
+&__products-button:disabled {
+    border:2px solid #ABABAB;
+    color: #131313;
 }
 &__made-button {
     margin-top: 28px;
@@ -86,6 +91,24 @@ margin: 0px;
     display: flex;
     flex-direction: column;
 }
+&__btn--open {
+    margin-left: 0px;
+    padding-top: 24px;
+    justify-content: start;
+    width: 60px;
+    height: 24px;
+    cursor: url("../images/cursor.png"), auto;
+}
+&__btn--open:hover &__arrow {
+    transform: scaleX(1.25);
+}
+&__btn--open &__arrow {
+    transition: transform .25s linear;
+    transform: scale(1);
+}
+&__arrow {
+fill:#FCFCFC;
+}
 &__left-bottom p {
     width: 200px;
     font-family: 'Montserrat';
@@ -101,8 +124,8 @@ width: 40px;
 }
 .img-3 {
     position: absolute;
-    right:102px;
-    bottom:-665px;;
+bottom: -765px;
+right: 20px;
 }
 &__trole-list {
     position: absolute;
@@ -139,7 +162,7 @@ color: #FCFCFC;
        // width:768px;
     }
     .hero {
-        height: 312px;
+        height: 337px;
         background-color:#84A178;
         margin: 0 auto;
         background-position: bottom;
@@ -149,7 +172,7 @@ color: #FCFCFC;
         &__left-top {
             position: absolute;
             top: 1px;
-            left: 31px;
+            left: 46px;
             width: 200px;
             display: flex;
             flex-direction: row;
@@ -196,11 +219,11 @@ line-height: 10px;
         &__left-bottom {
             position: absolute;
             top: 147px;
-            left: 32px;
+            left: 47px;
         }
         .column {
             position: absolute;
-            top: 20px;
+            top: 32px;
             left: 217px;
             display: flex;
             flex-direction: column;
@@ -211,14 +234,28 @@ line-height: 10px;
             line-height: 1.1;
             color: #FCFCFC;
         }
-        .img-2 {
-        padding-top: 20px;
-        width: 40px;
+        &__btn--open {
+            margin-left: 0px;
+            padding-top: 24px;
+            justify-content: start;
+            width: 60px;
+            height: 24px;
+            cursor: url("../images/cursor.png"), auto;
+        }
+        &__btn--open:hover &__arrow {
+            transform: scaleX(1.25);
+        }
+        &__btn--open &__arrow {
+            transition: transform .25s linear;
+            transform: scale(1);
+        }
+        &__arrow {
+        fill:#FCFCFC;
         }
         .img-3 {
             position: absolute;
-            right:102px;
-            bottom:-665px;;
+bottom: -393px;
+right: 20px;
         }
         &__trole-list {
             position: absolute;
@@ -246,16 +283,97 @@ line-height: 10px;
         }
     }
 }
+@media screen and (min-width:480px) and (max-width:768px) {
+        .hero {
+        height:438px;
+        background-color:#84A178;
+        margin: 0 auto;
+        background-position: bottom;
+        background-image: url('../images/hero/point-mobile.png');
+        background-repeat: no-repeat;
+    &__container {
+		width:480px;
+	}
+    &__left-top {
+        position: absolute;
+        top: 40px;
+        left: 35px;
+        width: 347px;
+    }
+    &__title {           
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 33px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+        margin: 0px;
+}
+    &__title-span {
+font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 32px;
+text-transform: uppercase;
+color: #FCFCFC;
+    }
+    &__left-bottom {
+        display: none;
+    }
+    .column {
+        flex-direction: column;
+display: flex;
+position: absolute;
+top: 82px;
+left: 240px;
+    }
+    &__left-bottom p {
+        width: 151px;
+        font-size: 12px;
+        line-height: 1.1;
+        color: #FCFCFC;
+    }
+    &__btn--open {
+        margin-left: 0px;
+        padding-top: 24px;
+        justify-content: start;
+        width: 60px;
+        height: 24px;
+        cursor: url("../images/cursor.png"), auto;
+    }
+    &__btn--open:hover &__arrow {
+        transform: scaleX(1.25);
+    }
+    &__btn--open &__arrow {
+        transition: transform .25s linear;
+        transform: scale(1);
+    }
+    &__arrow {
+    fill:#FCFCFC;
+    }
+        .img-3 {
+            position: absolute;
+            bottom: -490px;
+            right: 8px;
+    }
+    &__trole-list {
+        display: none;
+    }
+}
+}
 @media screen and (min-width:320px) and (max-width:480px) {
     .container {
         //width:320px;
     }
     .hero {
-        height: 432px;
+        height:438px;
         background-color:#84A178;
         margin: 0 auto;
         background-position: bottom;
-        //background-image: url('../images/hero/point-mobile.png');
+        background-image: url('../images/hero/point-mobile.png');
         background-repeat: no-repeat;
        
         &__left-top {
@@ -285,7 +403,7 @@ text-transform: uppercase;
 color: #FCFCFC;
         }
         &__products-button {
-            margin-top: 21px;
+            margin-top: 32px;
             width: 62px;
             height: 24px;
             border-radius: 8px;
@@ -297,7 +415,7 @@ line-height: 10px;
 color: #131313;
         }
         &__made-button {
-            margin-top: 21px;
+            margin-top: 32px;
             margin-left: 8px;
 font-size: 8px;
 line-height: 10px;
@@ -305,14 +423,10 @@ line-height: 10px;
         &__left-bottom {
             display:none;
         }
-        .img-2 {
-        padding-top: 20px;
-        width: 40px;
-        }
         .img-3 {
-            position: absolute;
-            right:102px;
-            bottom:-665px;;
+position: absolute;
+bottom: -490px;
+right: 8px;
         }
         &__trole-list {
             display:none;
