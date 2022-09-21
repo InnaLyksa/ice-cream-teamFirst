@@ -1,14 +1,45 @@
 .contacts {
   background-color: #84a178;
- 
+  padding-top: 0px;
+}
+.contacts .container {
+  // top: -393px;
+  // position: absolute;
+  padding-right: 20px;
+  padding-left: 20px;
+  @include tablet {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @include desktop {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+.contact__address {
+  margin-bottom: -345px;
+  @include tablet {
+    margin-bottom: -315px;
+  }
+  @include desktop {
+    margin-bottom: -96px;
+  }
 }
 .contacts__list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
+  @include tablet {
+    gap: 16px;
+  }
+  @include desktop {
+    gap: 32px;
+  }
 }
 .contacts__item {
+  position: relative;
+  top: -350px;
   padding-top: 40px;
   padding-right: 32px;
   padding-bottom: 40px;
@@ -18,6 +49,19 @@
   background-color: rgba(252, 252, 252, 1);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  @include tablet {
+    top: -310px;
+    width: 224px;
+    height: 528px;
+    width: calc((100% - 32px) / 3);
+  }
+  @include desktop {
+    top: -96px;
+    width: 368px;
+    height: 528px;
+    padding-left: 40px;
+    width: calc((100% - 64px) / 3);
+  }
 }
 .contacts-address {
   border-bottom: 1px solid rgba(225, 225, 225, 1);
@@ -39,6 +83,17 @@
   text-align: center;
   color: rgba(19, 19, 19, 1);
   margin-bottom: 20px;
+  @include tablet {
+    width: 73px;
+    height: 28px;
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  @include desktop {
+    width: 75px;
+    height: 28px;
+    font-size: 16px;
+  }
 }
 .contacts-address__tex {
   width: 130px;
@@ -56,6 +111,17 @@
   text-align: center;
   color: rgba(19, 19, 19, 1);
   margin-bottom: 20px;
+  @include tablet {
+    width: 138px;
+    height: 28px;
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  @include desktop {
+    width: 138px;
+    height: 28px;
+    font-size: 16px;
+  }
 }
 .contacts-address__city {
   font-family: 'Montserrat';
@@ -65,6 +131,13 @@
   line-height: 1.86;
   color: rgba(19, 19, 19, 1);
   margin-bottom: 8px;
+  @include tablet {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 .contacts-adress__link {
   font-family: 'Montserrat';
@@ -74,11 +147,21 @@
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: rgba(214, 147, 109, 1);
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 .contacts-time {
   border-bottom: 1px solid rgba(225, 225, 225, 1);
   padding-top: 22px;
   padding-bottom: 22px;
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .contacts-time__days {
   font-family: 'Montserrat';
@@ -87,6 +170,12 @@
   font-size: 12px;
   line-height: 1.86;
   color: rgba(19, 19, 19, 1);
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 .contacts-time__clock {
   font-family: 'Montserrat';
@@ -95,7 +184,14 @@
   font-size: 12px;
   line-height: 1.86;
   color: rgba(171, 171, 171, 1);
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
 }
+
 .contacts-tims__item {
   margin-bottom: 8px;
 }
@@ -106,6 +202,12 @@
   font-size: 12px;
   line-height: 1.5;
   color: rgba(19, 19, 19, 1);
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 .contacts-information__mail {
   font-family: 'Montserrat';
@@ -114,11 +216,22 @@
   font-size: 12px;
   line-height: 1.5;
   color: #131313;
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 .contacts-information {
   padding-top: 22px;
+  @include tablet {
+    padding-top: 32px;
+  }
 }
 .contacts__btn {
+  display: block;
+  margin: 0 auto;
   width: 196px;
   height: 42px;
   background: #f8d24e;
@@ -128,34 +241,62 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: rgba(19, 19, 19, 1);
   margin-bottom: 16px;
+  transition: background-color $trans-duration $timing-function,
+    color $trans-duration $timing-function;
+  @include tablet {
+    display: block none;
+    margin: 0 auto none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
+  &:disabled {
+    background-color: #ababab;
+  }
 }
 .contacts__icon {
   margin-left: 10px;
+  transition: fill $trans-duration $timing-function;
 }
-.contact__btn {
-  width: 196px;
-  height: 42px;
+.contacts__btn:focus .contacts__icon {
+  fill: #fcfcfc;
+}
+.but {
   border: 2px solid #f8d24e;
-  border-radius: 10px;
-  background: rgba(132, 161, 120, 1);
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: rgba(19, 19, 19, 1);
+  background: transparent;
+  transition: border $trans-duration $timing-function;
+  &:hover {
+    background-color: transparent;
+    border-color: #0a8817;
+  }
+  &:focus {
+    background-color: transparent;
+    border-color: #0a8817;
+    color: #fcfcfc;
+  }
+  &:disabled {
+    background-color: transparent;
+    border-color: #ababab;
+  }
 }
-.contacts__buttons {
+
+.contacts-buttons {
   margin-top: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  @include tablet {
+    margin-top: 32px none;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    // flex-wrap: wrap;
+  }
 }

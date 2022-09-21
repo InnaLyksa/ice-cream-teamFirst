@@ -178,32 +178,39 @@
     justify-content: center;
     border-radius: 50%;
     background-color: $color-accent;
-    cursor: pointer;
+    cursor: url(/src/images/cursor.png), auto;
+    fill: $bgr-color-main;
 
     transition: background-color 250ms $timing-function;
+
+    &:hover,
+        &:focus {
+           fill: $text-color;
+        }
+                &.footer__social-icon {
+                    fill: $text-color;
+                }
 }
 
-@media screen and (min-width: 768px) {
-    .footer__social-icon {
-        fill: $bgr-color-main;
-    }
+// @media screen and (min-width: 768px) {
+    
 
-    .footer__social-icon:hover,
-    .footer__social-icon:focus {
-        fill: $text-color;
-    }
-}
+//     .footer__social-icon:hover,
+//     .footer__social-icon:focus {
+//         fill: $text-color;
+//     }
+// }
 
-@media screen and (max-width: 767px) {
-    .footer__social-icon {
-        fill: $bgr-color-main;
-    }
+// @media screen and (max-width: 767px) {
+//     .footer__social-icon {
+//         fill: $bgr-color-main;
+//     }
 
-    .footer__social-icon:hover,
-    .footer__social-icon:focus {
-        fill: $text-color;
-    }
-}
+//     .footer__social-icon:hover,
+//     .footer__social-icon:focus {
+//         fill: $text-color;
+//     }
+// }
 
 @media screen and (min-width: 1200px) {
     .footer__tel-text {

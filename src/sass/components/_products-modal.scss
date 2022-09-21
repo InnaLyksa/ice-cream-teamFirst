@@ -18,9 +18,20 @@
   position: absolute;
   top: 28px;
   right: 20px;
+  cursor: url(/src/images/cursor.png), auto;
   @include tablet {
     top: 20px;
   }
+}
+
+.icon-menu_close {
+  fill: $color-primary;
+  transition: fill 250ms linear;
+}
+
+.icon-menu_close:hover,
+.icon-menu_close:focus {
+  fill: #0a8817;
 }
 
 .products-modal__title {
@@ -190,6 +201,7 @@
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  cursor: url(/src/images/cursor.png), auto;
   @include tablet {
     width: 121px;
   }

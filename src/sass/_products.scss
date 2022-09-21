@@ -11,11 +11,11 @@
 }
 .products {
   background-image: url(/src/images/products/background.png);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/src/images/products/background-2x.png);
-  }
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(/src/images/products/background-2x.png);
+  // }
   background-color: #fff;
   // opacity: 0.5;
 }
@@ -308,9 +308,9 @@
   height: 24px;
   align-self: flex-end;
 
-  cursor: pointer;
   margin-right: auto;
   margin-left: auto;
+  cursor: url(/src/images/cursor.png), auto;
 
   & .products__icon {
     transform: scale(1);

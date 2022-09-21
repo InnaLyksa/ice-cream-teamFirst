@@ -1,3 +1,4 @@
+
 .section-reviews{
         background-image: url(/src/images/products/background.png);
         
@@ -27,10 +28,49 @@ padding-top: 281px;
         margin-left: auto;
         margin-right: auto;
         
+.section-reviews {
+  background-image: url(/src/images/products/background.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/products/background-2x.png);
+  }
+
+  background-color: #fff;
+  // opacity: 0.5;
+  padding-bottom: 300px;
+
+  @media screen and(max-width:480px) {
+    padding-top: 200px;
+  }
+  padding-top: 281px;
+  @include tablet {
+    padding-top: 317px;
+    padding-bottom: 300px;
+  }
+
+  @include desktop {
+    padding-top: 540px;
+    padding-bottom: 100px;
+  }
+}
+.reviews-container {
+  //    padding-top: 223px;
+  //    padding-bottom: 75px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.reviews-title{
-    margin-top: 30px;
+.reviews-title {
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  /* identical to box height, or 37px */
+  text-align: center;
 
         font-weight: 500;
         font-size: 20px;
@@ -94,17 +134,60 @@ margin-right: auto;
    margin-right: auto;
    margin-bottom: 28px;
    border-radius: 50%;
+  color: #131313;
+  @include tablet {
+    font-size: 16px;
+  }
+}
+.reviews-text {
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 39px;
+  padding-right: 39px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.55;
+  /* or 31px */
+  text-align: center;
+  color: #fcfcfc;
+  background: #84a178;
+  border-radius: 10px;
+
+  @include tablet {
+    height: 140px;
+    max-width: 705px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    height: 125px;
+    max-width: 968px;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+}
+.reviews-images {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+  border-radius: 50%;
 }
 
-.reviews-button{
-    
-    background: #D9D9D9;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    margin-top: 32px;
-    margin-right: 18px;
-
+.reviews-button {
+  background: #d9d9d9;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: 32px;
+  margin-right: 18px;
 }
 
 .comment__choise{
@@ -145,6 +228,16 @@ margin-right: auto;
     border: 0;
     outline: none;
     background: transparent;
+.section-button {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.slick-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .comment__choise li:before {
@@ -169,3 +262,8 @@ margin-right: auto;
  .comment__choise li:active::before {
     background-color: #84A178;
 }
+// .slick-active{
+
+//     background-color: #84A178;
+// }
+

@@ -1,30 +1,23 @@
-.contact-modal {
-  position: relative;
+.contact-modal.modal {
   width: 280px;
   height: 365px;
   padding: 28px;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30;
-  transition: 0.3s all;
   overflow: auto;
   @include tablet {
     width: 568px;
     height: 458px;
     padding: 32px 60px;
   }
-
+}
+.contact-modal {
   &__btn-close {
     display: block;
     position: absolute;
     top: 11px;
     right: 11px;
-    cursor: pointer;
     @include tablet {
       top: 24px;
       right: 24px;

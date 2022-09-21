@@ -1,0 +1,85 @@
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero__left-top">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title-span">passion</span>
+      </h1>
+      <a class="hero__button-link1" href="#products"
+        ><button type="button" class="hero__products-button">
+          Products
+        </button></a
+      ><a class="hero__button-link2" href="#about"
+        ><button type="button" class="hero__made-button">
+          How it's made?
+        </button></a
+      >
+    </div>
+    <div class="hero__left-bottom">
+      <picture class="img-1">
+        <source
+          srcset="
+            ./images/hero/plate-desk1x.png 1x,
+            ./images/hero/plate-desk2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/plate-tab1x.png 1x,
+            ./images/hero/plate-tab2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="./images/hero/ice-cream-2-desktop.png" alt="ice-cream" />
+      </picture>
+      <div class="column">
+        <p>
+          You’d still want small ice crystals, to make a super smooth ice cream
+          and you’d like to incorporate enough air for a pleasant eating
+          experience
+        </p>
+        <button class="button hero__btn--open js-open-modal" data-modal="“3”">
+          <svg class="hero__arrow" width="40" height="20">
+            <use href="./images/icon.svg#icon-arrow-d"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hero__right">
+      <picture class="img-3">
+        <source
+          srcset="
+            ./images/hero/ice-cream-desk1x.png 1x,
+            ./images/hero/ice-cream-desk2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/hero/ice-cream-tab1x.png 1x,
+            ./images/hero/ice-cream-tab2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/hero/ice-cream-mob1x.png 1x,
+            ./images/hero/ice-cream-mob2x.png 2x
+          "
+          media="(max-width: 767.5px)"
+        />
+        <img src="./images/hero/ice-cream-4-desktop.png" alt="ice-cream" />
+      </picture>
+      <ul class="hero__trole-list">
+        <li class="hero__trole-item">
+          <span class="hero__span">16</span>
+          <p>Cafe</p>
+        </li>
+        <li class="hero__trole-item">
+          <span class="hero__span">23</span>
+          <p>Food trucks</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

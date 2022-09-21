@@ -1,5 +1,4 @@
-<!-- <div class="contact-backdrop is-hidden"> -->
-<div class="contact-modal-two visually-hidden">
+<div class="contact-modal-two modal" data-modal="6">
   <button type="button" class="contact-modal__btn-close js-modal-close">
     <svg class="about-modal__icon" width="20" height="20">
       <use href="/src/images/icon.svg#icon-menu_close"></use>
@@ -21,6 +20,8 @@
         type="text"
         class="contact-modal-two__input"
         name="user-name"
+        pattern="[a-zA-Zа-яА-ЯіІїЇєЄ]*"
+        title="Name (any letter in any case)"
         placeholder="Name"
         required
       />
@@ -28,6 +29,9 @@
         type="tel"
         class="contact-modal-two__input"
         name="user-tel"
+        pattern="\+[0-9]{12}"
+        title="Phone (+380123456789)"
+        minlength="13"
         placeholder="Phone"
         required
       />
@@ -35,6 +39,7 @@
         type="email"
         class="contact-modal-two__input"
         name="user-email"
+        title="Email (exsample@dog.com)"
         placeholder="Email"
         required
       />
@@ -48,4 +53,3 @@
     <button type="submit" class="contact-modal__submit">Submit</button>
   </form>
 </div>
-<!-- </div> -->

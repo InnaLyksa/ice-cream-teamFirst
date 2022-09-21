@@ -1,4 +1,3 @@
-
 $('.reviews-list').slick({
   dots: true,
 
@@ -11,6 +10,4 @@ $('.reviews-list').slick({
   dotsClass: 'comment__choise > li',
 }
 );
-
-
 

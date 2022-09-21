@@ -1,5 +1,4 @@
-<!-- <div class="contact-backdrop is-hidden"> -->
-<div class="contact-modal visually-hidden">
+<div class="contact-modal modal" data-modal="5">
   <button type="button" class="contact-modal__btn-close js-modal-close">
     <svg class="about-modal__icon" width="20" height="20">
       <use href="/src/images/icon.svg#icon-menu_close"></use>
@@ -10,7 +9,7 @@
     <source
       srcset="
         ./images/contact-modal/map-1x.webp 1x,
-        ./images/contact-modal/map-2x.webp
+        ./images/contact-modal/map-2x.webp 2ч
       "
       media="(min-width:768px)"
       type="image/webp"
@@ -36,6 +35,12 @@
       alt="map"
     />
   </picture>
-  <button type="button" class="contact-modal__button">Open map</button>
+
+  <a
+    href="https://goo.gl/maps/qvXxVnN7LqY2DfTUA"
+    target="blank"
+    rel="noopener noreferrer nofollow"
+    class="contacts-adress__link"
+    ><button type="button" class="contact-modal__button">Open map</button>
+  </a>
 </div>
-<!-- </div> -->
