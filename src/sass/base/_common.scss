@@ -25,3 +25,24 @@ body {
     font-size: 16px;
   }
 }
+.back-to-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  background-color: #11762591;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 35%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.back-to-home-icon {
+  transition: fill $trans-duration $timing-function;
+}
+.back-to-home:hover .back-to-home-icon,
+.back-to-home:focus .back-to-home-icon {
+  fill: $text-color;
+}
