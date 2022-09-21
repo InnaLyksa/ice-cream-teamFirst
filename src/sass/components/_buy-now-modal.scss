@@ -3,7 +3,6 @@
   min-height: 500px;
   overflow: auto;
   transform: translate(-50%, -50%);
-
   @include tablet {
     max-width: 568px;
     height: 650px;
@@ -43,6 +42,11 @@
   margin-top: 8px;
 }
 
+.icon-modal-close:focus,
+.icon-modal-close:hover {
+  fill: $bgr-color-main;
+}
+
 .modal__title {
   font-family: $font-second;
   font-size: 16px;
@@ -68,18 +72,43 @@
     gap: 32px;
   }
 }
-.buy-now__item {
+
+.chec {
+  display: none;
+}
+.label-wrap {
+  cursor: url(/src/images/cursor.png), auto;
+
+  transition: background-color $trans-duration $timing-function;
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #96af8c;
   width: 132px;
   height: 135px;
-  border-radius: 10px;
-  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-  border-radius: 15.78;
 }
-.buy-now__item:checked {
-  width: 50px;
-  height: 50px;
+
+.chec--green:checked + .buy-now--green {
+  background-color: #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+.chec--yellow:checked + .buy-now--yellow {
+  background-color: #f8d24eb2;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+.chec--brown:checked + .buy-now--brown {
+  background-color: #d6936d;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+.span-titl {
+  width: inherit;
+  display: block;
+  position: absolute;
+  bottom: 20px;
 }
 .wrap--green {
+  transition: box-shadow $trans-duration $timing-function;
+
   content: ' ';
   width: 132px;
   height: 140px;
@@ -106,6 +135,8 @@
   }
 }
 .wrap--yellow {
+  transition: box-shadow $trans-duration $timing-function;
+
   content: ' ';
   width: 132px;
   height: 140px;
@@ -132,6 +163,8 @@
   }
 }
 .wrap--brown {
+  transition: box-shadow $trans-duration $timing-function;
+
   content: ' ';
   width: 132px;
   height: 140px;
@@ -160,7 +193,8 @@
 }
 
 .buy-now__set {
-  margin-top: 95px;
+  position: relative;
+  top: 90px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -176,7 +210,6 @@
 }
 .buy-now--yellow {
   border: 2px solid #efd478;
-  background-color: #efd478;
 }
 .buy-now--brown {
   border: 2px solid #d6936d;
@@ -190,9 +223,7 @@
     margin-bottom: 32px;
   }
 }
-// .buy-now__label {
-//   width: 100%;
-// }
+
 .buy-now__input {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;

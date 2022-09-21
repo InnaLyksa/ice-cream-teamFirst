@@ -7,4 +7,5 @@ button {
   cursor: url(/src/images/cursor.png), auto;
   @include font(600, 14px, 1.25, null);
   @include flex(flex, center, center);
+  transition: background-color $trans-duration $timing-function;
 }
