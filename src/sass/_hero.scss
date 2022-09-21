@@ -19,8 +19,8 @@ li,ul {
     }
 &__left-top {
     position: absolute;
-    top: 15px;
-    left: 17px;
+    top: 95px;
+    left: 32px;
     width: 367px;
     display: flex;
     flex-direction: row;
@@ -39,50 +39,71 @@ width: 367px;
 margin: 0px;
 }
 &__products-button {
-    margin-top: 28px;
     width: 134px;
     height: 42px;
     border: 2px solid #F8D24E;
     border-radius: 10px;
     background-color: #84A278;
-    cursor: pointer;
     color:#131313;
 }
 &__products-button:hover {
     border: 2px solid #0A8817;
+    cursor: url("../images/cursor.png"), auto;
 }
 &__products-button:focus {
     border: 2px solid #0A8817;
+    border-color: #0A8817;
     color: #FCFCFC;
+    outline: none;
 }
 &__products-button:disabled {
-    border:2px solid #ABABAB;
+    border: 2px solid #ABABAB;
     color: #131313;
 }
-&__made-button {
+&__button-link1 {
     margin-top: 28px;
-    margin-left: 34px;
+    height: 42px;
+}
+&__button-link1:focus {
+    outline: none;
+    border: none;
+}
+&__made-button {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
     color:#F8D24E;
-    cursor: pointer;
+    text-decoration: underline;
 }
 &__made-button:hover {
     color: #0A8817;
+    cursor: url("../images/cursor.png"), auto;
 }
 &__made-button:focus {
     color: #FCFCFC;
 }
-&__made-button a {
+&__button-link2 {
     text-decoration: underline;
+    color:#F8D24E;
+    border: none;
+margin-top: 40px;
+margin-left: 34px;
+}
+&__button-link2:hover {
+    text-decoration: underline;
+    color:#0A8817;
+}
+&__button-link2:focus {
+    text-decoration: underline;
+    color: #FCFCFC;
+    outline: none;
 }
 &__left-bottom {
     position: absolute;
     top: 365px;
-    left: 17px;
+    left: 32px;
 }
 .column {
     position: absolute;
@@ -96,10 +117,10 @@ margin: 0px;
     padding-top: 24px;
     justify-content: start;
     width: 60px;
-    height: 24px;
+    height: 40px;
     cursor: url("../images/cursor.png"), auto;
 }
-&__btn--open:hover &__arrow {
+&__btn--open:hover &__arrow, &__btn--open:focus &__arrow {
     transform: scaleX(1.25);
 }
 &__btn--open &__arrow {
@@ -127,34 +148,36 @@ width: 40px;
 bottom: -765px;
 right: 20px;
 }
-&__trole-list {
-    position: absolute;
-    top: 120px;
-    right: 16px;
-    display: flex;
-    flex-direction: column;
-}
-&__trole-item {
-    display: list-item;
-}
-&__trole-item span {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 900;
-font-size: 46px;
-line-height: 1.2;
-text-align: right;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #131313;
-}
-&__trole-item p {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.2;
-color: #FCFCFC;
+            &__trole-list {
+                position: absolute;
+                top: 120px;
+                right: 16px;
+                display: flex;
+                flex-direction: column;
+            }
+            &__trole-item {
+                display: list-item;
+                text-align: right;
+            }
+            &__trole-item span {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 46px;
+            line-height: 1.2;
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #131313;
+            }
+            &__trole-item p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.2;
+            color: #FCFCFC;
+            text-align: right;
 }
 }
 @media screen and (min-width:768px) and (max-width:1200px){
@@ -162,12 +185,12 @@ color: #FCFCFC;
        // width:768px;
     }
     .hero {
-        height: 337px;
-        background-color:#84A178;
-        margin: 0 auto;
-        background-position: bottom;
-        background-image: url('../images/hero/point-tablet.png');
-        background-repeat: no-repeat;
+            height: 337px;
+            background-color:#84A178;
+            margin: 0 auto;
+            background-position: bottom;
+            background-image: url('../images/hero/point-tablet.png');
+            background-repeat: no-repeat;
        
         &__left-top {
             position: absolute;
@@ -179,42 +202,46 @@ color: #FCFCFC;
             flex-wrap: wrap;
         }
         &__title {           
-font-family: 'Seymour One';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-text-transform: uppercase;
-color: #FCFCFC;
-width: 169px;
-margin: 0px;
+            font-family: 'Seymour One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #FCFCFC;
+            width: 169px;
+            margin: 0px;
 }
         &__title-span {
-font-family: 'Seymour One';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 13px;
-text-transform: uppercase;
-color: #FCFCFC;
+            font-family: 'Seymour One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 13px;
+            text-transform: uppercase;
+            color: #FCFCFC;
+        }
+        &__button-link1 {
+            margin-top: 21px;
         }
         &__products-button {
-            margin-top: 21px;
             width: 62px;
             height: 24px;
             border-radius: 8px;
             font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 8px;
-line-height: 10px;
-color: #131313;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 10px;
+            color: #131313;
+        }
+        &__button-link2 {
+            margin-top: 37px;
+            margin-left: 8px;
         }
         &__made-button {
-            margin-top: 21px;
-            margin-left: 8px;
-font-size: 8px;
-line-height: 10px;
+            font-size: 8px;
+            line-height: 10px;
         }
         &__left-bottom {
             position: absolute;
@@ -254,13 +281,16 @@ line-height: 10px;
         }
         .img-3 {
             position: absolute;
-bottom: -393px;
-right: 20px;
+            bottom: -393px;
+            right: 20px;
         }
         &__trole-list {
             position: absolute;
             top: 10px;
             right: 16px;
+        }
+        &__trole-item {
+            text-align: right;
         }
         &__trole-item span {
             font-family: 'Montserrat';
@@ -312,23 +342,45 @@ right: 20px;
         margin: 0px;
 }
     &__title-span {
-font-family: 'Seymour One';
-font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 32px;
-text-transform: uppercase;
-color: #FCFCFC;
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+    &__button-link1 {
+        margin-top: 32px;
+    }
+    &__products-button {
+        width: 62px;
+        height: 24px;
+        border-radius: 8px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 10px;
+        color: #131313;
+    }
+    &__button-link2 {
+        margin-top: 32px;
+        margin-left: 8px;
+    }
+    &__made-button {
+        font-size: 8px;
+        line-height: 10px;
     }
     &__left-bottom {
         display: none;
     }
     .column {
         flex-direction: column;
-display: flex;
-position: absolute;
-top: 82px;
-left: 240px;
+        display: flex;
+        position: absolute;
+        top: 82px;
+        left: 240px;
     }
     &__left-bottom p {
         width: 151px;
@@ -357,7 +409,7 @@ left: 240px;
         .img-3 {
             position: absolute;
             bottom: -490px;
-            right: 8px;
+            padding-right: 78px;
     }
     &__trole-list {
         display: none;
@@ -365,9 +417,6 @@ left: 240px;
 }
 }
 @media screen and (min-width:320px) and (max-width:480px) {
-    .container {
-        //width:320px;
-    }
     .hero {
         height:438px;
         background-color:#84A178;
@@ -375,11 +424,13 @@ left: 240px;
         background-position: bottom;
         background-image: url('../images/hero/point-mobile.png');
         background-repeat: no-repeat;
-       
+        &__container {
+            width:320px;
+        }
         &__left-top {
             position: absolute;
             top: 40px;
-            left: 20px;
+            left: 35px;
             width: 247px;
         }
         &__title {           
@@ -392,45 +443,107 @@ left: 240px;
             text-transform: uppercase;
             color: #FCFCFC;
             margin: 0px;
-}
+                }
         &__title-span {
-font-family: 'Seymour One';
-font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 32px;
-text-transform: uppercase;
-color: #FCFCFC;
+            font-family: 'Seymour One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 32px;
+            text-transform: uppercase;
+            color: #FCFCFC;
+        }
+        &__button-link1 {
+            margin-top: 32px;
         }
         &__products-button {
-            margin-top: 32px;
             width: 62px;
             height: 24px;
             border-radius: 8px;
             font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 8px;
-line-height: 10px;
-color: #131313;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 10px;
+            color: #131313;
         }
-        &__made-button {
+        &__button-link2 {
             margin-top: 32px;
             margin-left: 8px;
-font-size: 8px;
-line-height: 10px;
+        }
+        &__made-button {
+
+            font-size: 8px;
+            line-height: 10px;
         }
         &__left-bottom {
             display:none;
         }
+        &__right {
+            width:320px;
+        }
         .img-3 {
-position: absolute;
-bottom: -490px;
-right: 8px;
+            position: absolute;
+            bottom: -490px;
+            margin-left:44px;
         }
         &__trole-list {
             display:none;
         }
-    
+    }
+}
+@media screen and (max-width:320px) {
+    .hero {
+        height:438px;
+        background-color:#84A178;
+        margin: 0 auto;
+        background-position: bottom;
+        background-image: url('../images/hero/point-mobile.png');
+        background-repeat: no-repeat;
+        &__container {
+            width:320px;
+        }
+        &__left-top {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 150px;
+        }
+        &__title {           
+            font-family: 'Seymour One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 33px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FCFCFC;
+            margin: 0px;
+            width: 150px;
+            text-align: center;
+}
+        &__title-span {
+        display:none;
+        }
+        &__products-button {
+           display: none;
+        }
+        &__made-button {
+            display: none;
+        }
+        &__left-bottom {
+            display:none;
+        }
+        &__right {
+            width:320px;
+        }
+        .img-3 {
+position: absolute;
+bottom: -490px;
+left: 5px;
+        }
+        &__trole-list {
+            display:none;
+        }
     }
 }
