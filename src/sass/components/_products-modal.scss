@@ -24,6 +24,16 @@
   }
 }
 
+.icon-menu_close {
+  fill: $color-primary;
+  transition: fill 250ms linear;
+}
+
+.icon-menu_close:hover,
+.icon-menu_close:focus {
+  fill: #0a8817;
+}
+
 .products-modal__title {
   font-size: 20px;
   line-height: 1.4;
