@@ -1,13 +1,16 @@
 .menu-modal.active,
 .overlay.active {
   transform: scale(100%);
+  @include desktop {
+    display: none;
+  }
 }
 .icon-menu__close {
-  transition: fill $trans-duration $timing-function;
+  transition: transform $trans-duration $timing-function;
 }
 .icon-menu__close:focus,
 .icon-menu__close:hover {
-  fill: $color-accent;
+  transform: scale(1.5);
 }
 .menu-modal {
   top: 0;
@@ -15,6 +18,7 @@
   transform: translateX(50%);
 
   background-color: $bgr-color-main;
+
   > .container {
     height: 100%;
     display: flex;
@@ -24,9 +28,14 @@
     margin-left: auto;
     padding: 16px;
     z-index: 4;
-    // fill: rgb(179, 6, 6);
+    transition: fill $trans-duration $timing-function;
+    transition: transform $trans-duration $timing-function;
+
     @include desktop {
       display: none;
+    }
+    &:hover {
+      transform: scale(1.5);
     }
   }
   &__nav {
@@ -44,13 +53,9 @@
     padding: 16px;
   }
 }
-.icon-menu:focus,
-.icon-menu:hover {
-  fill: $color-accent;
-}
+
 .icon-menu {
   transition: fill $trans-duration $timing-function;
-
   fill: rgb(255, 255, 255);
 }
 .menu-nav {
