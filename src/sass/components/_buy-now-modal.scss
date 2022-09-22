@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 28px 0 28px;
+  padding: 0 20px 0 20px;
 }
 .icon-modal-close {
   margin-left: auto;
@@ -53,7 +53,7 @@
   line-height: 1.5;
   margin-top: 14px;
   text-align: center;
-  margin-bottom: 85px;
+  margin-bottom: 103px;
   color: $color-primary;
 }
 
@@ -70,9 +70,9 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
+    margin-bottom: 40px;
   }
 }
-
 .chec {
   display: none;
 }
@@ -83,7 +83,6 @@
   display: block;
   position: relative;
   border-radius: 10px;
-  border: 2px solid #96af8c;
   width: 132px;
   height: 135px;
 }
@@ -93,7 +92,7 @@
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 }
 .chec--yellow:checked + .buy-now--yellow {
-  background-color: #f8d24eb2;
+  background-color: #efd478;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 }
 .chec--brown:checked + .buy-now--brown {
@@ -147,8 +146,8 @@
       rgba(248, 210, 78, 0.7),
       rgba(248, 210, 78, 0.7)
     ),
-    #f8d24eb2;
-  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    #efd478;
+  box-shadow: 0px 10px 20px rgba(153, 114, 23, 0.25);
   background-image: url(/src/images/yellow.png);
   top: -50%;
   left: -1.7%;
@@ -176,7 +175,7 @@
       rgba(213, 117, 63, 0.7)
     ),
     #d5753fb2;
-  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   background-image: url(/src/images/brown.png);
   top: -50%;
   left: -1.7%;
@@ -216,11 +215,13 @@
 }
 .buy-now__form {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin-bottom: 24px;
-  gap: 16px;
+  gap: 12px;
+  margin-bottom: 32px;
+
   @include tablet {
-    margin-bottom: 32px;
+    gap: 16px;
   }
 }
 
@@ -229,11 +230,14 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   min-width: 224px;
-  height: 42px;
   padding: 0 0 0 16px;
+  height: 32px;
+
+  cursor: url(/src/images/cursor.png), auto;
 
   @include tablet {
     width: 368px;
+    height: 42px;
   }
 }
 .buy-now__textarea {
@@ -241,11 +245,14 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   min-width: 224px;
-  height: 84px;
+  height: 64px;
   resize: none;
   padding: 11px 0 0 16px;
+  cursor: url(/src/images/cursor.png), auto;
+
   @include tablet {
     width: 368px;
+    height: 84px;
   }
 }
 .buy-now__input:not(:focus):not(:placeholder-shown):invalid,
@@ -258,7 +265,7 @@
   align-items: center;
   background: #f8d24e;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-top: 16px;
   &:hover {
     background-color: $btn-color-hover;
   }

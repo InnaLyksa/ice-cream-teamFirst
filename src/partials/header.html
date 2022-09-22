@@ -158,7 +158,7 @@
         type="checkbox"
       />
       <label class="label-wrap buy-now--green" for="green">
-        <div class="wrap--green"></div>
+        <span class="wrap--green"></span>
         <span class="buy-now__set">Ice coffee</span>
       </label>
       <input
@@ -168,7 +168,7 @@
         type="checkbox"
       />
       <label class="label-wrap buy-now--yellow" for="yellow">
-        <div class="wrap--yellow"></div>
+        <span class="wrap--yellow"></span>
         <span class="buy-now__set">Ice coffee</span>
       </label>
       <input
@@ -178,12 +178,12 @@
         type="checkbox"
       />
       <label class="label-wrap buy-now--brown" for="brown">
-        <div class="wrap--brown"></div>
+        <span class="wrap--brown"></span>
         <span class="buy-now__set">Ice coffee</span>
       </label>
     </div>
 
-    <form autocomplete="off" class="buy-now__form">
+    <form autocomplete="on" class="buy-now__form">
       <input
         class="buy-now__input"
         type="text"
@@ -191,17 +191,17 @@
         title="Name (any letter in any case)"
         minlength="3"
         placeholder="Name"
-        required
+        required=""
       />
       <input
         class="buy-now__input"
         type="tel"
-        name="tel"
+        name="phone"
         pattern="\+[0-9]{12}"
         title="Phone (+380111111111)"
         minlength="13"
         placeholder="Phone"
-        required
+        required=""
       />
 
       <textarea
@@ -209,8 +209,8 @@
         placeholder="Comment"
         name="Comment"
       ></textarea>
+      <button class="button button__submit" type="submit">Submit</button>
     </form>
-    <button class="button button__submit" type="submit">Submit</button>
   </div>
 </div>
 
