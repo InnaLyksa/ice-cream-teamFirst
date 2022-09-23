@@ -1,6 +1,6 @@
 .modal.modal_buy {
   max-width: 480px;
-  min-height: 500px;
+  height: 500px;
   overflow: auto;
   transform: translate(-50%, -50%);
   @include tablet {
@@ -85,8 +85,15 @@
   border-radius: 10px;
   width: 132px;
   height: 135px;
+  transition: transform $timing-function $trans-duration;
 }
 
+.label-wrap:hover {
+  transform: scale(1.1);
+}
+.label-wrap:required {
+  transform: scale(1.1);
+}
 .chec--green:checked + .buy-now--green {
   background-color: #96af8c;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
@@ -239,6 +246,7 @@
     width: 368px;
     height: 42px;
   }
+  transition: border $timing-function $trans-duration;
 }
 .buy-now__textarea {
   background: rgba(248, 210, 78, 0.1);
@@ -254,10 +262,22 @@
     width: 368px;
     height: 84px;
   }
+  transition: border $timing-function $trans-duration;
 }
 .buy-now__input:not(:focus):not(:placeholder-shown):invalid,
-.buy-now__textarea:not(:focus):not(:placeholder-shown):invalid {
-  background-color: rgba(255, 0, 0, 0.7);
+.buy-now__textarea:not(:focus):not(:placeholder-shown):invalid,
+.buy-now__input:not(:hover):not(:placeholder-shown):invalid,
+.buy-now__textarea:not(:hover):not(:placeholder-shown):invalid {
+  border-color: rgba(255, 0, 0, 0.7);
+  outline: none;
+}
+.buy-now__input:focus,
+.buy-now__textarea:focus {
+  outline: none;
+  border: 2px solid #84a178;
+}
+.buy-now__input:not(:placeholder-shown):required:invalid {
+  border-color: rgba(255, 0, 0, 0.7);
 }
 .button__submit {
   width: 114px;
