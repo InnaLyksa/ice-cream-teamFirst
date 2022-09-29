@@ -1,9 +1,6 @@
 .menu-modal.active,
 .overlay.active {
   transform: scale(100%);
-  @include desktop {
-    display: none;
-  }
 }
 .icon-menu__close {
   transition: transform $trans-duration $timing-function;
